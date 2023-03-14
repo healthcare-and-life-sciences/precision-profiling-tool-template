@@ -1,0 +1,547 @@
+{
+  "name" : "ITT_Sunshine_Recipe",
+  "label" : "ITT Sunshine Recipe",
+  "scheduleExpression" : null,
+  "publishingTarget" : "DATASET",
+  "format" : "R3",
+  "scheduleType" : null,
+  "recipeDefinition" : {
+    "version" : "56.0",
+    "nodes" : {
+      "FORMULA0" : {
+        "action" : "formula",
+        "sources" : [
+          "TO_DIMENSION4"
+        ],
+        "parameters" : {
+          "expressionType" : "SQL",
+          "fields" : [
+            {
+              "type" : "TEXT",
+              "name" : "Physician_Name",
+              "label" : "Physician_Name",
+              "formulaExpression" : "concat(Covered_Recipient_First_Name, ' ',Covered_Recipient_Last_Name)",
+              "precision" : 255,
+              "defaultValue" : ""
+            }
+          ]
+        }
+      },
+      "JOIN0" : {
+        "action" : "join",
+        "sources" : [
+          "FORMULA0",
+          "LOAD_DATASET1"
+        ],
+        "schema" : {
+          "fields" : [ ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "MailingState",
+              "Name"
+            ]
+          }
+        },
+        "parameters" : {
+          "joinType" : "LOOKUP",
+          "leftKeys" : [
+            "Physician_Name",
+            "Recipient_State"
+          ],
+          "rightKeys" : [
+            "Name",
+            "MailingState"
+          ]
+        }
+      },
+      "LOAD_DATASET1" : {
+        "action" : "load",
+        "sources" : [ ],
+        "parameters" : {
+          "fields" : [
+            "Name",
+            "MailingState",
+            "NPI__c"
+          ],
+          "dataset" : {
+            "type" : "connectedDataset",
+            "label" : "Contact",
+            "connectionName" : "SFDC_LOCAL",
+            "sourceObjectName" : "Contact"
+          },
+          "sampleDetails" : {
+            "type" : "TopN",
+            "sortBy" : [ ]
+          }
+        }
+      },
+      "OUTPUT0" : {
+        "action" : "save",
+        "sources" : [
+          "EDIT_ATTRIBUTES0"
+        ],
+        "parameters" : {
+          "fields" : [ ],
+          "dataset" : {
+            "type" : "analyticsDataset",
+            "label" : "ITT_Sunshine_2021_Transformed",
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}",
+            "folderName" : "${App.Folder.FullyQualifiedName}"
+          },
+          "measuresToCurrencies" : [ ]
+        }
+      },
+      "EDIT_ATTRIBUTES0" : {
+        "action" : "schema",
+        "sources" : [
+          "JOIN0"
+        ],
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "NPI__c",
+              "newProperties" : {
+                "label" : "Practitioner NPI",
+                "name" : "Practitioner_NPI"
+              }
+            }
+          ]
+        }
+      },
+      "LOAD_DATASET2" : {
+        "action" : "load",
+        "sources" : [ ],
+        "parameters" : {
+          "fields" : [
+            "Recipient_Primary_Business_Street_Address_Line1",
+            "Recipient_Primary_Business_Street_Address_Line2",
+            "Third_Party_Payment_Recipient_Indicator",
+            "Associated_Device_or_Medical_Supply_PDI_5",
+            "Associated_Device_or_Medical_Supply_PDI_4",
+            "Covered_Recipient_First_Name",
+            "Associated_Device_or_Medical_Supply_PDI_1",
+            "Associated_Device_or_Medical_Supply_PDI_3",
+            "Associated_Device_or_Medical_Supply_PDI_2",
+            "Recipient_City",
+            "Submitting_Applicable_Manufacturer_or_Applicable_GPO_Name",
+            "Recipient_Country",
+            "Name_of_Third_Party_Entity_Receiving_Payment_or_Transfer_of_Value",
+            "Recipient_Zip_Code",
+            "Related_Product_Indicator",
+            "Covered_or_Noncovered_Indicator_1",
+            "Covered_or_Noncovered_Indicator_2",
+            "Teaching_Hospital_ID",
+            "Covered_Recipient_Primary_Type_1",
+            "Nature_of_Payment_or_Transfer_of_Value",
+            "Covered_Recipient_Primary_Type_2",
+            "Country_of_Travel",
+            "Covered_Recipient_Primary_Type_3",
+            "Covered_Recipient_Primary_Type_4",
+            "Product_Category_or_Therapeutic_Area_1",
+            "Covered_Recipient_Primary_Type_5",
+            "Product_Category_or_Therapeutic_Area_2",
+            "Recipient_Province",
+            "Contextual_Information",
+            "Covered_Recipient_Primary_Type_6",
+            "Product_Category_or_Therapeutic_Area_3",
+            "Product_Category_or_Therapeutic_Area_4",
+            "Product_Category_or_Therapeutic_Area_5",
+            "Date_of_Payment",
+            "City_of_Travel",
+            "Delay_in_Publication_Indicator",
+            "State_of_Travel",
+            "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Name",
+            "Name_of_Drug_or_Biological_or_Device_or_Medical_Supply_1",
+            "Name_of_Drug_or_Biological_or_Device_or_Medical_Supply_3",
+            "Name_of_Drug_or_Biological_or_Device_or_Medical_Supply_2",
+            "Covered_Recipient_Middle_Name",
+            "Name_of_Drug_or_Biological_or_Device_or_Medical_Supply_5",
+            "Name_of_Drug_or_Biological_or_Device_or_Medical_Supply_4",
+            "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_State",
+            "Recipient_Postal_Code",
+            "Teaching_Hospital_CCN",
+            "Covered_Recipient_Type",
+            "Third_Party_Equals_Covered_Recipient_Indicator",
+            "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Country",
+            "Form_of_Payment_or_Transfer_of_Value",
+            "Change_Type",
+            "Covered_Recipient_Specialty_6",
+            "Covered_Recipient_Specialty_4",
+            "Covered_Recipient_Specialty_5",
+            "Covered_Recipient_Specialty_2",
+            "Covered_Recipient_Specialty_3",
+            "Recipient_State",
+            "Charity_Indicator",
+            "Covered_Recipient_Specialty_1",
+            "Covered_or_Noncovered_Indicator_3",
+            "Indicate_Drug_or_Biological_or_Device_or_Medical_Supply_1",
+            "Covered_or_Noncovered_Indicator_4",
+            "Covered_or_Noncovered_Indicator_5",
+            "Covered_Recipient_Name_Suffix",
+            "Covered_Recipient_Last_Name",
+            "Indicate_Drug_or_Biological_or_Device_or_Medical_Supply_5",
+            "Indicate_Drug_or_Biological_or_Device_or_Medical_Supply_4",
+            "Payment_Publication_Date",
+            "Indicate_Drug_or_Biological_or_Device_or_Medical_Supply_3",
+            "Indicate_Drug_or_Biological_or_Device_or_Medical_Supply_2",
+            "Covered_Recipient_License_State_code5",
+            "Covered_Recipient_License_State_code4",
+            "Covered_Recipient_License_State_code1",
+            "Covered_Recipient_License_State_code3",
+            "Dispute_Status_for_Publication",
+            "Covered_Recipient_License_State_code2",
+            "Associated_Drug_or_Biological_NDC_1",
+            "Associated_Drug_or_Biological_NDC_5",
+            "Associated_Drug_or_Biological_NDC_4",
+            "Associated_Drug_or_Biological_NDC_3",
+            "Associated_Drug_or_Biological_NDC_2",
+            "Physician_Ownership_Indicator",
+            "Teaching_Hospital_Name",
+            "Record_ID",
+            "Number_of_Payments_Included_in_Total_Amount",
+            "Covered_Recipient_Profile_ID",
+            "Total_Amount_of_Payment_USDollars",
+            "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID",
+            "Program_Year",
+            "Covered_Recipient_NPI"
+          ],
+          "dataset" : {
+            "type" : "analyticsDataset",
+            "label" : "ITT_Sunshine_2021",
+            "name" : "${App.Datasets.ITT_Sunshine_2021.FullyQualifiedName}"
+          },
+          "sampleDetails" : {
+            "type" : "TopN",
+            "sortBy" : [ ]
+          }
+        }
+      },
+      "TO_DIMENSION0" : {
+        "action" : "typeCast",
+        "sources" : [
+          "LOAD_DATASET2"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "Record_ID_to_dimension",
+              "newProperties" : {
+                "name" : "Record_ID"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "Record_ID"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "Record_ID",
+              "newProperties" : {
+                "label" : "Record_ID",
+                "name" : "Record_ID_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION1" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION0"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "Covered_Recipient_Profile_ID_to_dimension",
+              "newProperties" : {
+                "name" : "Covered_Recipient_Profile_ID"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "Covered_Recipient_Profile_ID"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "Covered_Recipient_Profile_ID",
+              "newProperties" : {
+                "label" : "Covered_Recipient_Profile_ID",
+                "name" : "Covered_Recipient_Profile_ID_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION2" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION1"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID_to_dimension",
+              "newProperties" : {
+                "name" : "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID",
+              "newProperties" : {
+                "label" : "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID",
+                "name" : "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION3" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION2"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "Program_Year_to_dimension",
+              "newProperties" : {
+                "name" : "Program_Year"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "Program_Year"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "Program_Year",
+              "newProperties" : {
+                "label" : "Program_Year",
+                "name" : "Program_Year_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION4" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION3"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "Covered_Recipient_NPI_to_dimension",
+              "newProperties" : {
+                "name" : "Covered_Recipient_NPI"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "Covered_Recipient_NPI"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "Covered_Recipient_NPI",
+              "newProperties" : {
+                "label" : "Covered_Recipient_NPI",
+                "name" : "Covered_Recipient_NPI_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "ui" : {
+      "nodes" : {
+        "TRANSFORM0" : {
+          "label" : "Derive Full Name",
+          "description" : "Add a derived column for full name (first name plus last name).",
+          "type" : "TRANSFORM",
+          "top" : 112,
+          "left" : 392.3,
+          "graph" : {
+            "FORMULA0" : {
+              "parameters" : {
+                "type" : "BASE_FORMULA_UI"
+              },
+              "label" : "Formula"
+            }
+          },
+          "connectors" : [ ]
+        },
+        "JOIN0" : {
+          "label" : "Join 0",
+          "type" : "JOIN",
+          "top" : 112,
+          "left" : 532.3
+        },
+        "LOAD_DATASET1" : {
+          "label" : "Contact",
+          "type" : "LOAD_DATASET",
+          "top" : 252,
+          "left" : 112,
+          "parameters" : {
+            "sampleSize" : 2000
+          }
+        },
+        "OUTPUT0" : {
+          "label" : "ITT_Sunshine_2021_Transformed",
+          "type" : "OUTPUT",
+          "top" : 112,
+          "left" : 812.3
+        },
+        "TRANSFORM1" : {
+          "label" : "Rename NPI Column",
+          "description" : "Rename the NPI column because the period causes issues.",
+          "type" : "TRANSFORM",
+          "top" : 112,
+          "left" : 672.3,
+          "graph" : {
+            "EDIT_ATTRIBUTES0" : {
+              "label" : "Edit Attributes"
+            }
+          },
+          "connectors" : [ ]
+        },
+        "LOAD_DATASET2" : {
+          "label" : "ITT_Sunshine_2021",
+          "type" : "LOAD_DATASET",
+          "top" : 112,
+          "left" : 112,
+          "parameters" : {
+            "sampleSize" : 2000
+          }
+        },
+        "TRANSFORM2" : {
+          "label" : "Numeric to Text Transforms",
+          "description" : "Some incoming fields must be converted from Numeric to Dimension (Text)",
+          "type" : "TRANSFORM",
+          "top" : 112,
+          "left" : 252.3,
+          "graph" : {
+            "TO_DIMENSION0" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION1" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION2" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION3" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION4" : {
+              "label" : "To Text"
+            }
+          },
+          "connectors" : [
+            {
+              "source" : "TO_DIMENSION0",
+              "target" : "TO_DIMENSION1"
+            },
+            {
+              "source" : "TO_DIMENSION1",
+              "target" : "TO_DIMENSION2"
+            },
+            {
+              "source" : "TO_DIMENSION2",
+              "target" : "TO_DIMENSION3"
+            },
+            {
+              "source" : "TO_DIMENSION3",
+              "target" : "TO_DIMENSION4"
+            }
+          ]
+        }
+      },
+      "connectors" : [
+        {
+          "source" : "TRANSFORM0",
+          "target" : "JOIN0"
+        },
+        {
+          "source" : "LOAD_DATASET1",
+          "target" : "JOIN0"
+        },
+        {
+          "source" : "TRANSFORM1",
+          "target" : "OUTPUT0"
+        },
+        {
+          "source" : "JOIN0",
+          "target" : "TRANSFORM1"
+        },
+        {
+          "source" : "TRANSFORM2",
+          "target" : "TRANSFORM0"
+        },
+        {
+          "source" : "LOAD_DATASET2",
+          "target" : "TRANSFORM2"
+        }
+      ],
+      "hiddenColumns" : [ ]
+    },
+    "runMode" : "full"
+  },
+  "lastTime" : null
+}

@@ -1,0 +1,3682 @@
+{
+  "name" : "ITT_Network_Dashboard_tp",
+  "label" : "ITT Network Dashboard",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [ ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [ ]
+  },
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [ ],
+    "gridLayouts" : [
+      {
+        "name" : "Default",
+        "numColumns" : 44,
+        "pages" : [
+          {
+            "label" : "TABLE",
+            "name" : "ed1bc532-edf0-4a56-8eef-08af4dd6938e",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 44,
+                "column" : 0,
+                "name" : "container_4",
+                "row" : 0,
+                "rowspan" : 9,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 38,
+                "column" : 3,
+                "name" : "text_4",
+                "row" : 1,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 8,
+                "name" : "link_1",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 15,
+                "name" : "link_2",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 22,
+                "name" : "link_3",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#FFCD95",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 29,
+                "name" : "link_4",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 44,
+                "column" : 0,
+                "name" : "text_5",
+                "row" : 8,
+                "rowspan" : 1,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#FFFFFF",
+                  "borderEdges" : [
+                    "top"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 1,
+                "name" : "number_1",
+                "row" : 9,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 16,
+                "name" : "listselector_1",
+                "row" : 9,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 19,
+                "column" : 1,
+                "name" : "container_1",
+                "row" : 14,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 1,
+                "name" : "text_2",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 4,
+                "column" : 4,
+                "name" : "listselector_2",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 8,
+                "name" : "listselector_5",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 11,
+                "name" : "listselector_4",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 14,
+                "name" : "listselector_3",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 17,
+                "name" : "listselector_6",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 21,
+                "column" : 20,
+                "name" : "container_2",
+                "row" : 14,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 4,
+                "column" : 20,
+                "name" : "text_3",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 5,
+                "column" : 24,
+                "name" : "listselector_7",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 29,
+                "name" : "listselector_9",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 32,
+                "name" : "listselector_10",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 35,
+                "name" : "listselector_8",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 38,
+                "name" : "listselector_11",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 10,
+                "column" : 30,
+                "name" : "container_3",
+                "row" : 21,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 10,
+                "column" : 30,
+                "name" : "navigation_2",
+                "row" : 21,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 40,
+                "column" : 1,
+                "name" : "repeater_1",
+                "row" : 24,
+                "rowspan" : 63,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          },
+          {
+            "label" : "CHART",
+            "name" : "1076ddaa-5638-44bf-b3c0-0ba73be8e774",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 8,
+                "column" : 1,
+                "name" : "number_1",
+                "row" : 9,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 8,
+                "column" : 16,
+                "name" : "listselector_1",
+                "row" : 9,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 19,
+                "column" : 1,
+                "name" : "container_1",
+                "row" : 14,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 1,
+                "name" : "text_2",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 4,
+                "column" : 4,
+                "name" : "listselector_2",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 8,
+                "name" : "listselector_5",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 11,
+                "name" : "listselector_4",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 14,
+                "name" : "listselector_3",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 17,
+                "name" : "listselector_6",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 21,
+                "column" : 20,
+                "name" : "container_2",
+                "row" : 14,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 4,
+                "column" : 20,
+                "name" : "text_3",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 5,
+                "column" : 24,
+                "name" : "listselector_7",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 29,
+                "name" : "listselector_9",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 32,
+                "name" : "listselector_10",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 35,
+                "name" : "listselector_8",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 38,
+                "name" : "listselector_11",
+                "row" : 15,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 10,
+                "column" : 30,
+                "name" : "container_3",
+                "row" : 21,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 10,
+                "column" : 30,
+                "name" : "navigation_2",
+                "row" : 21,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 40,
+                "column" : 1,
+                "name" : "chart_1",
+                "row" : 24,
+                "rowspan" : 43,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 44,
+                "column" : 0,
+                "name" : "container_5",
+                "row" : 0,
+                "rowspan" : 9,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 38,
+                "column" : 3,
+                "name" : "text_1",
+                "row" : 1,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 8,
+                "name" : "link_5",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 15,
+                "name" : "link_6",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 22,
+                "name" : "link_7",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#FFCD95",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 29,
+                "name" : "link_8",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 44,
+                "column" : 0,
+                "name" : "text_6",
+                "row" : 8,
+                "rowspan" : 1,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#FFFFFF",
+                  "borderEdges" : [
+                    "top"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [ ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#091A3E",
+          "cellSpacingX" : 4,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#C5D3E0"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "CITY_1_4_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "CITY_1_4",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "CITY_2"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "CITY_2"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "CITY_1_3_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "CITY_1_3",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "ZIP_1"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "ZIP_1"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "lens_7_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "lens_7",
+        "query" : {
+          "query" : {
+            "values" : [
+              "GRP2_VOLUME_NATL_RANK",
+              "COUNTY_2",
+              "COUNTY_1",
+              "HMS_SPEC1_2",
+              "ADDRESS1_2",
+              "GRP1_VOLUME_NATL_RANK_to_measure",
+              "GRP2_VOLUME_TERR_RANK_to_measure",
+              "TERR_SOR_VALUE",
+              "TERR_NUM_CONN_GRP2_ENTITIES",
+              "NATL_NUM_CONN_GRP2_ENTITIES",
+              "ADDRESS1_1",
+              "ADDRESS2_1",
+              "ADDRESS2_2",
+              "Bucket",
+              "CITY_1",
+              "CITY_2",
+              "CRED_1",
+              "CRED_2",
+              "FAX_1",
+              "FAX_2",
+              "FIRST_1",
+              "FIRST_2",
+              "GRP1_VOLUME_NATL_RANK",
+              "GRP1_VOLUME_TERR_RANK",
+              "GRP1_VOLUME_TERR_RANK_to_measure",
+              "GRP2_VOLUME_NATL_RANK_to_measure",
+              "GRP2_VOLUME_TERR_RANK",
+              "HMS_PIID1",
+              "HMS_PIID2",
+              "HMS_SPEC1_1",
+              "HMS_SPEC2_1",
+              "HMS_SPEC2_2",
+              "LAST_1",
+              "LAST_2",
+              "MIDDLE_1",
+              "MIDDLE_2",
+              "NAME_1",
+              "NAME_2",
+              "NATL_NUM_CONN_GRP1_ENTITIES",
+              "NATL_SOR_VALUE",
+              "NPI_1",
+              "NPI_2",
+              "PCT1",
+              "PCT2",
+              "PHONE1_1",
+              "PHONE1_2",
+              "PHONE2_1",
+              "PHONE2_2",
+              "PRACTITIONER_TYPE_1",
+              "PRACTITIONER_TYPE_2",
+              "SharedPatientCount",
+              "STATE_1",
+              "STATE_2",
+              "SUFFIX_1",
+              "SUFFIX_2",
+              "TERR_NUM_CONN_GRP1_ENTITIES",
+              "ZIP4_1",
+              "ZIP4_2",
+              "ZIP_1",
+              "ZIP_2",
+              "Contact1.Id",
+              "Contact2.Id"
+            ],
+            "order" : [
+              [
+                "GRP1_VOLUME_NATL_RANK_to_measure",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "options" : { },
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12,
+              "textWrap" : true
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12,
+              "textWrap" : true
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "maxColumnWidth" : 300,
+            "minColumnWidth" : 40,
+            "mode" : "variable",
+            "numberOfLines" : 1,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : true,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "CITY_1_3_3" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "CITY_1_3",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "ZIP_2"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "ZIP_2"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "CITY_1_4_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "CITY_1_4",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "STATE_2"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "STATE_2"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "CITY_1_5_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "CITY_1_5",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "STATE_1"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "STATE_1"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "CITY_1_4_3" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "CITY_1_4",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "COUNTY_2"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "COUNTY_2"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "NAME_1_1_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "NAME_1_1",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "NAME_1"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "NAME_1"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "CITY_1_1_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "CITY_1_1",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "CITY_1"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "CITY_1"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "NAME_1_NAME_2_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "NAME_1",
+              "NAME_2"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "showDimensionTitle" : true,
+            "columnMap" : {
+              "dimensionAxis" : [
+                "NAME_1",
+                "NAME_2"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "showAbsoluteValues" : true,
+            "showTotal" : true,
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "sankey",
+            "theme" : "wave",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            }
+          },
+          "type" : "chart"
+        }
+      },
+      "CITY_1_3_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "CITY_1_3",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "COUNTY_1"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "COUNTY_1"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "NAME_2_1_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "NAME_2_1",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "NAME_2"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "NAME_2"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Bucket_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "Bucket"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "all_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "#091A3E",
+      "borderColor" : "#98B1FF",
+      "borderEdges" : [
+        "all"
+      ],
+      "borderRadius" : 8,
+      "borderWidth" : 2
+    },
+    "widgets" : {
+      "container_1" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_2" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_3" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_4" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "container_5" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "text_3" : {
+        "parameters" : {
+          "content" : {
+            "richTextContent" : [
+              {
+                "attributes" : {
+                  "color" : "#ffffff",
+                  "size" : "16px"
+                },
+                "insert" : "Referred To"
+              },
+              {
+                "attributes" : {
+                  "align" : "left"
+                },
+                "insert" : "\n"
+              }
+            ]
+          },
+          "showActionMenu" : true
+        },
+        "type" : "text"
+      },
+      "text_2" : {
+        "parameters" : {
+          "content" : {
+            "richTextContent" : [
+              {
+                "attributes" : {
+                  "color" : "#ffffff",
+                  "size" : "16px"
+                },
+                "insert" : "Referrer"
+              },
+              {
+                "attributes" : {
+                  "align" : "left"
+                },
+                "insert" : "\n"
+              }
+            ]
+          },
+          "showActionMenu" : true
+        },
+        "type" : "text"
+      },
+      "text_5" : {
+        "parameters" : {
+          "content" : {
+            "richTextContent" : [
+              {
+                "attributes" : {
+                  "color" : "#091a3e",
+                  "size" : "16px"
+                },
+                "insert" : "Add text..."
+              },
+              {
+                "attributes" : {
+                  "align" : "left"
+                },
+                "insert" : "\n"
+              }
+            ]
+          },
+          "showActionMenu" : true
+        },
+        "type" : "text"
+      },
+      "text_4" : {
+        "parameters" : {
+          "content" : {
+            "richTextContent" : [
+              {
+                "attributes" : {
+                  "color" : "#ffffff",
+                  "size" : "24px"
+                },
+                "insert" : "INTELLIGENT TARGETING TOOL"
+              },
+              {
+                "attributes" : {
+                  "align" : "center"
+                },
+                "insert" : "\n"
+              }
+            ]
+          },
+          "showActionMenu" : true
+        },
+        "type" : "text"
+      },
+      "chart_1" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "showDimensionTitle" : true,
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "sankey",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "columnMap" : {
+            "dimensionAxis" : [
+              "NAME_1",
+              "NAME_2"
+            ],
+            "plots" : [
+              "count"
+            ]
+          },
+          "showActionMenu" : true,
+          "showAbsoluteValues" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "showTotal" : true,
+          "theme" : "dark",
+          "step" : "NAME_1_NAME_2_1",
+          "dimensionAxis" : {
+            "showTitle" : true,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "text_6" : {
+        "parameters" : {
+          "content" : {
+            "richTextContent" : [
+              {
+                "attributes" : {
+                  "color" : "#091a3e",
+                  "size" : "16px"
+                },
+                "insert" : "Add text..."
+              },
+              {
+                "attributes" : {
+                  "align" : "left"
+                },
+                "insert" : "\n"
+              }
+            ]
+          },
+          "showActionMenu" : true
+        },
+        "type" : "text"
+      },
+      "repeater_1" : {
+        "parameters" : {
+          "cardProperties" : {
+            "cellSpacingX" : 1,
+            "cellSpacingY" : 0,
+            "numColumns" : 48,
+            "rowHeight" : "fine",
+            "selectedStyles" : {
+              "backgroundColor" : "#091A3E",
+              "borderColor" : "#98B1FF",
+              "borderEdges" : [
+                "all"
+              ],
+              "borderRadius" : 8,
+              "borderWidth" : 2
+            },
+            "styles" : {
+              "backgroundColor" : "#091A3E",
+              "borderColor" : "#98B1FF",
+              "borderEdges" : [
+                "all"
+              ],
+              "borderRadius" : 8,
+              "borderWidth" : 2,
+              "bottomPadding" : 6,
+              "leftPadding" : 2,
+              "rightPadding" : 4,
+              "topPadding" : 5
+            }
+          },
+          "cellProperties" : {
+            "chart_53" : {
+              "parameters" : {
+                "columnMap" : {
+                  "plots" : [
+                    "GRP1_VOLUME_NATL_RANK_to_measure"
+                  ]
+                },
+                "high" : 66,
+                "min" : 0,
+                "max" : 10,
+                "valueType" : "compactNumber",
+                "visualizationType" : "flatgauge",
+                "theme" : "dark",
+                "medium" : 33,
+                "compactDecimalDigits" : -1,
+                "title" : {
+                  "fontSize" : 12,
+                  "subtitleFontSize" : 11,
+                  "label" : "Rank",
+                  "align" : "center",
+                  "subtitleLabel" : ""
+                },
+                "applyConditionalFormatting" : true
+              },
+              "position" : {
+                "colspan" : 9,
+                "column" : 0,
+                "row" : 6,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "chart"
+            },
+            "text_25" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : "[HMS_SPEC1_2]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "HMS_SPEC1_2" : {
+                      "field" : "HMS_SPEC1_2",
+                      "sourceType" : "result",
+                      "step" : "lens_7_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 19,
+                "column" : 29,
+                "row" : 2,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "left"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "text_24" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "14px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : "[NAME_2] - "
+                    },
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#98b1ff"
+                      },
+                      "insert" : "[CITY_2], [STATE_2]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "STATE_2" : {
+                      "field" : "STATE_2",
+                      "sourceType" : "result",
+                      "step" : "lens_7_1"
+                    },
+                    "NAME_2" : {
+                      "field" : "NAME_2",
+                      "sourceType" : "result",
+                      "step" : "lens_7_1"
+                    },
+                    "CITY_2" : {
+                      "field" : "CITY_2",
+                      "sourceType" : "result",
+                      "step" : "lens_7_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 19,
+                "column" : 29,
+                "row" : 0,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "left"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "number_16" : {
+              "parameters" : {
+                "compact" : false,
+                "measureField" : "SharedPatientCount",
+                "numberColor" : "#FFFFFF",
+                "numberSize" : 12,
+                "textAlignment" : "left",
+                "title" : "Shared Patients",
+                "titleColor" : "#FFFFFF",
+                "titleSize" : 12
+              },
+              "position" : {
+                "colspan" : 19,
+                "column" : 29,
+                "row" : 4,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "number"
+            },
+            "number_15" : {
+              "parameters" : {
+                "compact" : false,
+                "measureField" : "NATL_NUM_CONN_GRP2_ENTITIES",
+                "numberColor" : "#FFFFFF",
+                "numberSize" : 12,
+                "textAlignment" : "left",
+                "title" : "Connections",
+                "titleColor" : "#FFFFFF",
+                "titleSize" : 12
+              },
+              "position" : {
+                "colspan" : 23,
+                "column" : 0,
+                "row" : 4,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "number"
+            },
+            "chart_56" : {
+              "parameters" : {
+                "rangeWeight" : 20,
+                "max" : 100,
+                "visualizationType" : "bullet",
+                "barWeight" : 4,
+                "medium" : 33,
+                "title" : {
+                  "fontSize" : 12,
+                  "subtitleFontSize" : 11,
+                  "label" : "Patients seen by Referrer (%)",
+                  "align" : "center",
+                  "subtitleLabel" : ""
+                },
+                "barColor" : "black",
+                "high" : 66,
+                "columnMap" : {
+                  "plots" : [
+                    "PCT2"
+                  ]
+                },
+                "min" : 0,
+                "valueType" : "compactNumber",
+                "theme" : "dark",
+                "applyConditionalFormatting" : true
+              },
+              "position" : {
+                "colspan" : 10,
+                "column" : 38,
+                "row" : 6,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "chart"
+            },
+            "text_23" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : "[HMS_SPEC1_1]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "HMS_SPEC1_1" : {
+                      "field" : "HMS_SPEC1_1",
+                      "sourceType" : "result",
+                      "step" : "lens_7_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 23,
+                "column" : 0,
+                "row" : 2,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "chart_55" : {
+              "parameters" : {
+                "rangeWeight" : 20,
+                "max" : 100,
+                "visualizationType" : "bullet",
+                "barWeight" : 4,
+                "medium" : 33,
+                "title" : {
+                  "fontSize" : 12,
+                  "subtitleFontSize" : 11,
+                  "label" : "Patients Referred (%)",
+                  "align" : "center",
+                  "subtitleLabel" : ""
+                },
+                "barColor" : "black",
+                "high" : 66,
+                "columnMap" : {
+                  "plots" : [
+                    "PCT1"
+                  ]
+                },
+                "min" : 0,
+                "valueType" : "compactNumber",
+                "theme" : "dark",
+                "applyConditionalFormatting" : true
+              },
+              "position" : {
+                "colspan" : 14,
+                "column" : 9,
+                "row" : 6,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "right"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "chart"
+            },
+            "text_22" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "14px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : "[NAME_1] -"
+                    },
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : " "
+                    },
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#98b1ff"
+                      },
+                      "insert" : "[CITY_1], [STATE_1]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "STATE_1" : {
+                      "field" : "STATE_1",
+                      "sourceType" : "result",
+                      "step" : "lens_7_1"
+                    },
+                    "CITY_1" : {
+                      "field" : "CITY_1",
+                      "sourceType" : "result",
+                      "step" : "lens_7_1"
+                    },
+                    "NAME_1" : {
+                      "field" : "NAME_1",
+                      "sourceType" : "result",
+                      "step" : "lens_7_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 23,
+                "column" : 0,
+                "row" : 0,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "chart_54" : {
+              "parameters" : {
+                "columnMap" : {
+                  "plots" : [
+                    "NATL_SOR_VALUE"
+                  ]
+                },
+                "high" : 66,
+                "min" : 0,
+                "max" : 10,
+                "valueType" : "compactNumber",
+                "visualizationType" : "flatgauge",
+                "theme" : "dark",
+                "medium" : 33,
+                "compactDecimalDigits" : -1,
+                "title" : {
+                  "fontSize" : 12,
+                  "subtitleFontSize" : 11,
+                  "label" : "SOR",
+                  "align" : "center",
+                  "subtitleLabel" : ""
+                },
+                "applyConditionalFormatting" : true
+              },
+              "position" : {
+                "colspan" : 9,
+                "column" : 29,
+                "row" : 6,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "chart"
+            }
+          },
+          "exploreLink" : true,
+          "itemsPerRow" : 1,
+          "showActionMenu" : true,
+          "step" : "lens_7_1"
+        },
+        "type" : "repeater"
+      },
+      "listselector_7" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "NAME_2_1_1",
+          "title" : "Referred to Physician"
+        },
+        "type" : "listselector"
+      },
+      "listselector_6" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "CITY_1_3_2",
+          "title" : "Zip"
+        },
+        "type" : "listselector"
+      },
+      "listselector_9" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "CITY_1_4_2",
+          "title" : "State"
+        },
+        "type" : "listselector"
+      },
+      "listselector_8" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "CITY_1_4_1",
+          "title" : "City"
+        },
+        "type" : "listselector"
+      },
+      "listselector_3" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "CITY_1_1_1",
+          "title" : "City"
+        },
+        "type" : "listselector"
+      },
+      "listselector_2" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "NAME_1_1_1",
+          "title" : "Referring Physician"
+        },
+        "type" : "listselector"
+      },
+      "listselector_5" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "CITY_1_5_1",
+          "title" : "State"
+        },
+        "type" : "listselector"
+      },
+      "text_1" : {
+        "parameters" : {
+          "content" : {
+            "richTextContent" : [
+              {
+                "attributes" : {
+                  "color" : "#ffffff",
+                  "size" : "24px"
+                },
+                "insert" : "INTELLIGENT TARGETING TOOL"
+              },
+              {
+                "attributes" : {
+                  "align" : "center"
+                },
+                "insert" : "\n"
+              }
+            ]
+          },
+          "showActionMenu" : true
+        },
+        "type" : "text"
+      },
+      "listselector_4" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "CITY_1_3_1",
+          "title" : "County"
+        },
+        "type" : "listselector"
+      },
+      "link_3" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Network Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "NETWORK",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_4" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Payermix Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "PAYER MIX",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_1" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Target Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "TARGET",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_2" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Sunshine Payments Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "SUNSHINE",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "navigation_2" : {
+        "parameters" : {
+          "fontSize" : 16,
+          "selectedTab" : {
+            "backgroundColor" : "#091A3E",
+            "borderColor" : "#E8963B",
+            "borderEdges" : [
+              "bottom"
+            ],
+            "borderWidth" : 2,
+            "textColor" : "#FFFFFF"
+          },
+          "tabCount" : 5,
+          "textColor" : "#54698D"
+        },
+        "type" : "navigation"
+      },
+      "number_1" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "count",
+          "numberColor" : "#FFFFFF",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "all_1",
+          "textAlignment" : "left",
+          "title" : "Records",
+          "titleColor" : "#FFFFFF",
+          "titleSize" : 24,
+          "tooltip" : {
+            "customizeTooltip" : false
+          }
+        },
+        "type" : "number"
+      },
+      "link_7" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Network Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "NETWORK",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_8" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Payermix Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "PAYER MIX",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_5" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Target Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "TARGET",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_6" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Sunshine Payments Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "SUNSHINE",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "listselector_11" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "CITY_1_3_3",
+          "title" : "Zip"
+        },
+        "type" : "listselector"
+      },
+      "listselector_1" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "Bucket_1",
+          "title" : "Bucket"
+        },
+        "type" : "listselector"
+      },
+      "listselector_10" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "CITY_1_4_3",
+          "title" : "County"
+        },
+        "type" : "listselector"
+      }
+    }
+  }
+}

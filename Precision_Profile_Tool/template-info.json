@@ -1,0 +1,199 @@
+{
+  "templateType": "app",
+  "label": "Precision Profiling",
+  "name": "Precision_Profile_Tool",
+  "description": "Provide your sales reps with in-context access to Facility and Practitioner insights such as procedure volumes, peer rankings, affiliations, and sunshine payments right on the Account and Contact records.",
+  "assetVersion": 56.0,
+  "variableDefinition": "variables.json",
+  "uiDefinition": "ui.json",
+  "rules": [
+    {
+      "type": "templateToApp",
+      "file": "template-to-app-rules.json"
+    },
+    {
+      "type": "appToTemplate",
+      "file": "app-to-template-rules.json"
+    }
+  ],
+  "releaseInfo": {
+    "templateVersion": "1.2",
+    "notesFile": "releaseNotes.html"
+  },
+  "folderDefinition": "folder.json",
+  "externalFiles": [
+    {
+      "label": "ITT_Sunshine_2021",
+      "name": "ITT_Sunshine_2021_tp",
+      "condition": "${Variables.Overrides.createAllExternalFiles}",
+      "file": "external_files/ITT_Sunshine_2021.csv",
+      "type": "CSV",
+      "schema": "external_files/ITT_Sunshine_2021.json",
+      "userXmd": "external_files/ITT_Sunshine_2021_XMD.json",
+      "rows": 5
+    },
+    {
+      "label": "ITT_Payermix",
+      "name": "ITT_Payermix_tp",
+      "condition": "${Variables.Overrides.createAllExternalFiles}",
+      "file": "external_files/ITT_Payermix.csv",
+      "type": "CSV",
+      "schema": "external_files/ITT_Payermix.json",
+      "userXmd": "external_files/ITT_Payermix_XMD.json",
+      "rows": 5
+    },
+    {
+      "label": "ITT_Target",
+      "name": "ITT_Target_tp",
+      "condition": "${Variables.Overrides.createAllExternalFiles}",
+      "file": "external_files/ITT_Target.csv",
+      "type": "CSV",
+      "schema": "external_files/ITT_Target.json",
+      "userXmd": "external_files/ITT_Target_XMD.json",
+      "rows": 5
+    },
+    {
+      "label": "ITT_Network",
+      "name": "ITT_Network_tp",
+      "condition": "${Variables.Overrides.createAllExternalFiles}",
+      "file": "external_files/ITT_Network.csv",
+      "type": "CSV",
+      "schema": "external_files/ITT_Network.json",
+      "userXmd": "external_files/ITT_Network_XMD.json",
+      "rows": 5
+    }
+  ],
+  "lenses": [],
+  "dashboards": [
+    {
+      "label": "ITT Facility (Embedded)",
+      "name": "ITT_Facility_2_tp",
+      "condition": "${Variables.Overrides.createAllDashboards}",
+      "file": "dashboards/ITT_Facility_2.json"
+    },
+    {
+      "label": "ITT Network Dashboard",
+      "name": "ITT_Network_Dashboard_tp",
+      "condition": "${Variables.Overrides.createAllDashboards}",
+      "file": "dashboards/ITT_Network_Dashboard.json"
+    },
+    {
+      "label": "ITT Payermix Dashboard",
+      "name": "ITT_Payermix_Dashboard_tp",
+      "condition": "${Variables.Overrides.createAllDashboards}",
+      "file": "dashboards/ITT_Payermix_Dashboard.json"
+    },
+    {
+      "label": "ITT Practitioner (Embedded)",
+      "name": "ITT_Practitioner_tp",
+      "condition": "${Variables.Overrides.createAllDashboards}",
+      "file": "dashboards/ITT_Practitioner.json"
+    },
+    {
+      "label": "ITT Practitioner Network From (Embedded)",
+      "name": "ITT_Referred_From_Embedded_tp",
+      "condition": "${Variables.Overrides.createAllDashboards}",
+      "file": "dashboards/ITT_Referred_From_Embedded.json"
+    },
+    {
+      "label": "ITT Practitioner Network To (Embedded)",
+      "name": "ITT_Referred_To_Embedded_tp",
+      "condition": "${Variables.Overrides.createAllDashboards}",
+      "file": "dashboards/ITT_Referred_To_Embedded.json"
+    },
+    {
+      "label": "ITT Sunshine Payments Dashboard",
+      "name": "Sunshine_Payments_Dashboard_tp",
+      "condition": "${Variables.Overrides.createAllDashboards}",
+      "file": "dashboards/Sunshine_Payments_Dashboard.json"
+    },
+    {
+      "label": "ITT Target Dashboard",
+      "name": "ITT_Target_Dashboard_tp",
+      "condition": "${Variables.Overrides.createAllDashboards}",
+      "file": "dashboards/ITT_Target_Dashboard.json"
+    }
+  ],
+  "components": [],
+  "eltDataflows": [],
+  "recipes": [
+    {
+      "label": "ITT Sunshine Recipe",
+      "name": "ITT_Sunshine_Recipe",
+      "condition": "${Variables.Overrides.createAllRecipes}",
+      "file": "recipes/ITT_Sunshine_Recipe.json",
+      "executeCondition": "CreateSyncExecute"
+    },
+    {
+      "label": "ITT Payermix Recipe",
+      "name": "ITT_Payermix_Recipe",
+      "condition": "${Variables.Overrides.createAllRecipes}",
+      "file": "recipes/ITT_Payermix_Recipe.json",
+      "executeCondition": "CreateSyncExecute"
+    },
+    {
+      "label": "ITT Network Recipe",
+      "name": "ITT_Network_Recipe",
+      "condition": "${Variables.Overrides.createAllRecipes}",
+      "file": "recipes/ITT_Network_Recipe.json",
+      "executeCondition": "CreateSyncExecute"
+    },
+    {
+      "label": "ITT Target Recipe",
+      "name": "ITT_Target_Recipe",
+      "condition": "${Variables.Overrides.createAllRecipes}",
+      "file": "recipes/ITT_Target_Recipe.json",
+      "executeCondition": "CreateSyncExecute"
+    }
+  ],
+  "datasetFiles": [
+    {
+      "label": "ITT_Network_Transformed",
+      "name": "ITT_Network_Transformed_tp",
+      "condition": "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd": "dataset_files/ITT_Network_Transformed_XMD.json"
+    },
+    {
+      "label": "ITT_Payermix_Transformed",
+      "name": "ITT_Payermix_Transformed_tp",
+      "condition": "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd": "dataset_files/ITT_Payermix_Transformed_XMD.json"
+    },
+    {
+      "label": "ITT_Sunshine_2021_Transformed",
+      "name": "ITT_Sunshine_2021_Transformed_tp",
+      "condition": "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd": "dataset_files/ITT_Sunshine_2021_Transformed_XMD.json"
+    },
+    {
+      "label": "ITT_Target_Transformed",
+      "name": "ITT_Target_Transformed_tp",
+      "condition": "${Variables.Overrides.createAllDatasetFiles}",
+      "userXmd": "dataset_files/ITT_Target_Transformed_XMD.json"
+    }
+  ],
+  "storedQueries": [],
+  "imageFiles": [],
+  "extendedTypes": {},
+  "templateDependencies": [],
+  "icons": {
+    "appBadge": {
+      "name": "16.png"
+    },
+    "templateBadge": {
+      "name": "thumb_precision_profile"
+    },
+    "templatePreviews": [
+      {
+        "name": "preview_precision_profile",
+        "label": "Precision Profiling Preview",
+        "description": ""
+      },
+      {
+        "name": "preview_ppt_sun",
+        "label": "Sunshine Payments Dashboard",
+        "description": "Sunshine Payments Dashboard."
+      }
+    ]
+  }
+}

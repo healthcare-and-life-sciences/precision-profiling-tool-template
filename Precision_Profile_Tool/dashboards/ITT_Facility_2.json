@@ -1,0 +1,2012 @@
+{
+  "name" : "ITT_Facility_2_tp",
+  "label" : "ITT Facility (Embedded)",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [ ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [
+      {
+        "recordDisplayFields" : [ ],
+        "conditionalFormatting" : { },
+        "salesforceActions" : [ ],
+        "field" : "Practitioner_Special_2.Name",
+        "members" : [ ],
+        "customActions" : [ ]
+      },
+      {
+        "recordDisplayFields" : [ ],
+        "conditionalFormatting" : { },
+        "salesforceActions" : [ ],
+        "field" : "Practitioner_Special_3.Name",
+        "members" : [ ],
+        "customActions" : [ ]
+      },
+      {
+        "recordDisplayFields" : [ ],
+        "conditionalFormatting" : { },
+        "salesforceActions" : [ ],
+        "field" : "Practitioner_Special_1.Name",
+        "members" : [ ],
+        "customActions" : [ ]
+      },
+      {
+        "recordDisplayFields" : [ ],
+        "conditionalFormatting" : { },
+        "salesforceActions" : [ ],
+        "field" : "Name_Practitioner_NP_1.Practitioner_NPI",
+        "members" : [ ],
+        "customActions" : [ ]
+      },
+      {
+        "recordDisplayFields" : [ ],
+        "conditionalFormatting" : { },
+        "salesforceActions" : [ ],
+        "field" : "Name_Practitioner_NP_1.Name",
+        "members" : [ ],
+        "customActions" : [ ]
+      }
+    ]
+  },
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "Practitioner_Rank"
+        ],
+        "locked" : false,
+        "operator" : "in"
+      },
+      {
+        "dataset" : {
+          "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+        },
+        "dependent" : true,
+        "fields" : [
+          "Practitioner_Rank_Measure"
+        ],
+        "locked" : false,
+        "operator" : ">=<="
+      }
+    ],
+    "gridLayouts" : [
+      {
+        "name" : "Default",
+        "numColumns" : 42,
+        "pages" : [
+          {
+            "label" : "ITT Facility",
+            "name" : "e8b07741-31f5-4f0e-b7d6-2f0c5eb6c1ab",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 10,
+                "column" : 15,
+                "name" : "listselector_3",
+                "row" : 3,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 19,
+                "column" : 1,
+                "name" : "number_1",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 20,
+                "column" : 21,
+                "name" : "listselector_4",
+                "row" : 8,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 40,
+                "column" : 1,
+                "name" : "chart_2",
+                "row" : 37,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 40,
+                "column" : 1,
+                "name" : "chart_3",
+                "row" : 61,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 40,
+                "column" : 1,
+                "name" : "chart_4",
+                "row" : 13,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 11,
+                "column" : 29,
+                "name" : "filterpanel_1",
+                "row" : 3,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 9,
+                "column" : 2,
+                "name" : "listselector_1",
+                "row" : 3,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [ ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#091A3E",
+          "cellSpacingX" : 4,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#FFFFFF"
+        },
+        "version" : 1.0
+      },
+      {
+        "name" : "Mobile",
+        "numColumns" : 6,
+        "pages" : [
+          {
+            "label" : "ITT Facility",
+            "name" : "e8b07741-31f5-4f0e-b7d6-2f0c5eb6c1ab",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 3,
+                "column" : 0,
+                "name" : "listselector_1",
+                "row" : 1,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFCD95",
+                  "borderColor" : "#091A3E",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 3,
+                "name" : "listselector_3",
+                "row" : 1,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFCD95",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 0,
+                "name" : "filterpanel_3",
+                "row" : 6,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 0,
+                "name" : "number_1",
+                "row" : 11,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#FFFFFF",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 3,
+                "column" : 3,
+                "name" : "listselector_4",
+                "row" : 6,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 0,
+                "name" : "chart_1",
+                "row" : 15,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 0,
+                "name" : "chart_2",
+                "row" : 39,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 0,
+                "name" : "chart_3",
+                "row" : 63,
+                "rowspan" : 23,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [
+          "maxWidth(599)"
+        ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#091A3E",
+          "cellSpacingX" : 8,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#FFFFFF"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "Facility_Name_2_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Facility_Name_2",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "Facility_Name",
+              "Facility_NPI"
+            ],
+            "order" : [
+              [
+                "count",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "singlerequired",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Facility_Name",
+                "Facility_NPI"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Name_Practitioner_NP_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "Procedures"
+              ]
+            ],
+            "groups" : [
+              "Name",
+              "Practitioner_NPI"
+            ],
+            "order" : [
+              [
+                "sum_Procedures",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnProperties" : {
+              "Practitioner_NPI" : {
+                "type" : "text",
+                "parameters" : {
+                  "styles" : {
+                    "linkColor" : "#006dcc"
+                  },
+                  "alignment" : "left"
+                }
+              },
+              "Name" : {
+                "type" : "text",
+                "parameters" : {
+                  "styles" : {
+                    "linkColor" : "#006dcc"
+                  },
+                  "alignment" : "left"
+                }
+              }
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Name",
+                "Practitioner_NPI"
+              ],
+              "plots" : [
+                "sum_Procedures"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Bucket_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "Bucket"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "Practitioner_Special_3" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Practitioner_Special_2",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "avg",
+                "P_at_F_Rank_Measure"
+              ]
+            ],
+            "groups" : [
+              "Name",
+              "Practitioner_NPI"
+            ],
+            "order" : [
+              [
+                "avg_P_at_F_Rank_Measure",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : false,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "Top Physicians by Facility Rank",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnProperties" : {
+              "Name" : {
+                "type" : "text",
+                "parameters" : {
+                  "styles" : {
+                    "linkColor" : "#006dcc"
+                  },
+                  "alignment" : "left"
+                }
+              }
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Name",
+                "Practitioner_NPI"
+              ],
+              "plots" : [
+                "avg_P_at_F_Rank_Measure"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : true,
+              "showTitle" : false,
+              "showAxis" : false,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : false,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Practitioner_Special_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Practitioner_Special_2",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "avg",
+                "Practitioner_Rank_Measure"
+              ]
+            ],
+            "groups" : [
+              "Name",
+              "Practitioner_NPI"
+            ],
+            "order" : [
+              [
+                "avg_Practitioner_Rank_Measure",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : false,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "Top Physicians by National Rank",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnProperties" : {
+              "Name" : {
+                "type" : "text",
+                "parameters" : {
+                  "styles" : {
+                    "linkColor" : "#006dcc"
+                  },
+                  "alignment" : "left"
+                }
+              }
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Name",
+                "Practitioner_NPI"
+              ],
+              "plots" : [
+                "avg_Practitioner_Rank_Measure"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : true,
+              "showTitle" : false,
+              "showAxis" : false,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : false,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Practitioner_Special_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Practitioner_Special_2",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "Procedures"
+              ]
+            ],
+            "groups" : [
+              "Name",
+              "Practitioner_NPI"
+            ],
+            "order" : [
+              [
+                "sum_Procedures",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "none",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : false,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "Top Physicians by Procedure Volume",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnProperties" : {
+              "Name" : {
+                "type" : "text",
+                "parameters" : {
+                  "styles" : {
+                    "linkColor" : "#006dcc"
+                  },
+                  "alignment" : "left"
+                }
+              }
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Name",
+                "Practitioner_NPI"
+              ],
+              "plots" : [
+                "sum_Procedures"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : true,
+              "showTitle" : false,
+              "showAxis" : false,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : false,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Procedure_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "Procedure"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "Procedures_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "Procedures"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "sum_Procedures"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "#091A3E",
+      "borderColor" : "#98B1FF",
+      "borderEdges" : [
+        "all"
+      ],
+      "borderRadius" : 8,
+      "borderWidth" : 2
+    },
+    "widgets" : {
+      "listselector_3" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "Procedure_1",
+          "title" : "Procedure / Diagnosis"
+        },
+        "type" : "listselector"
+      },
+      "number_1" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "sum_Procedures",
+          "numberColor" : "#FFFFFF",
+          "numberSize" : 16,
+          "showActionMenu" : true,
+          "step" : "Procedures_1",
+          "textAlignment" : "left",
+          "title" : "Facility Procedure Volume",
+          "titleColor" : "#FFFFFF",
+          "titleSize" : 16,
+          "tooltip" : {
+            "customizeTooltip" : false
+          }
+        },
+        "type" : "number"
+      },
+      "listselector_4" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "displayTemplate" : "[Facility_Name] - [Facility_NPI]",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "Facility_Name_2_1",
+          "title" : "Facility"
+        },
+        "type" : "listselector"
+      },
+      "filterpanel_3" : {
+        "parameters" : {
+          "filterItemOptions" : {
+            "propertyColor" : "#54698D",
+            "valueColor" : "#16325C"
+          },
+          "filters" : [
+            {
+              "dataset" : {
+                "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+              },
+              "field" : "Practitioner_Rank"
+            }
+          ],
+          "showAllFilters" : false
+        },
+        "type" : "filterpanel"
+      },
+      "filterpanel_1" : {
+        "parameters" : {
+          "filterItemOptions" : {
+            "propertyColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "filters" : [
+            {
+              "dataset" : {
+                "name" : "${App.Datasets.ITT_Target_Transformed_tp.Name}"
+              },
+              "field" : "Practitioner_Rank_Measure"
+            }
+          ],
+          "showAllFilters" : false
+        },
+        "type" : "filterpanel"
+      },
+      "listselector_1" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "Bucket_1",
+          "title" : "Bucket"
+        },
+        "type" : "listselector"
+      },
+      "chart_2" : {
+        "parameters" : {
+          "autoFitMode" : "none",
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "showValues" : true,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : false,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Top Physicians by National Rank",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "columnProperties" : {
+            "Name" : {
+              "type" : "text",
+              "parameters" : {
+                "styles" : {
+                  "linkColor" : "#006dcc"
+                },
+                "alignment" : "left"
+              }
+            }
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Name",
+              "Practitioner_NPI"
+            ],
+            "plots" : [
+              "avg_Practitioner_Rank_Measure"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : true,
+            "showTitle" : false,
+            "showAxis" : false,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "Practitioner_Special_2",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_1" : {
+        "parameters" : {
+          "autoFitMode" : "none",
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "showValues" : true,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : false,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Top Physicians by Procedure Volume",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "columnProperties" : {
+            "Name" : {
+              "type" : "text",
+              "parameters" : {
+                "styles" : {
+                  "linkColor" : "#006dcc"
+                },
+                "alignment" : "left"
+              }
+            }
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Name",
+              "Practitioner_NPI"
+            ],
+            "plots" : [
+              "sum_Procedures"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : true,
+            "showTitle" : false,
+            "showAxis" : false,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "wave",
+          "step" : "Practitioner_Special_1",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_4" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "showValues" : true,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "columnProperties" : {
+            "Practitioner_NPI" : {
+              "type" : "text",
+              "parameters" : {
+                "styles" : {
+                  "linkColor" : "#006dcc"
+                },
+                "alignment" : "left"
+              }
+            },
+            "Name" : {
+              "type" : "text",
+              "parameters" : {
+                "styles" : {
+                  "linkColor" : "#006dcc"
+                },
+                "alignment" : "left"
+              }
+            }
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Name",
+              "Practitioner_NPI"
+            ],
+            "plots" : [
+              "sum_Procedures"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "Name_Practitioner_NP_1",
+          "dimensionAxis" : {
+            "showTitle" : true,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_3" : {
+        "parameters" : {
+          "autoFitMode" : "none",
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "showValues" : true,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : false,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Top Physicians by Facility Rank",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "columnProperties" : {
+            "Name" : {
+              "type" : "text",
+              "parameters" : {
+                "styles" : {
+                  "linkColor" : "#006dcc"
+                },
+                "alignment" : "left"
+              }
+            }
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Name",
+              "Practitioner_NPI"
+            ],
+            "plots" : [
+              "avg_P_at_F_Rank_Measure"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : true,
+            "showTitle" : false,
+            "showAxis" : false,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "Practitioner_Special_3",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      }
+    }
+  }
+}

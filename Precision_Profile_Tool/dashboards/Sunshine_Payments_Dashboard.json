@@ -1,0 +1,2923 @@
+{
+  "name" : "Sunshine_Payments_Dashboard_tp",
+  "label" : "ITT Sunshine Payments Dashboard",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [ ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [ ]
+  },
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [ ],
+    "gridLayouts" : [
+      {
+        "name" : "Default",
+        "numColumns" : 44,
+        "pages" : [
+          {
+            "label" : "Sunshine Payments",
+            "name" : "965f7097-8457-48f9-8a74-62e5216c426f",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 44,
+                "column" : 0,
+                "name" : "container_1",
+                "row" : 0,
+                "rowspan" : 9,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 38,
+                "column" : 3,
+                "name" : "text_2",
+                "row" : 1,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 8,
+                "name" : "link_1",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 15,
+                "name" : "link_2",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#FFCD95",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 22,
+                "name" : "link_3",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 7,
+                "column" : 29,
+                "name" : "link_4",
+                "row" : 5,
+                "rowspan" : 3,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [
+                    "bottom"
+                  ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 4
+                }
+              },
+              {
+                "colspan" : 43,
+                "column" : 0,
+                "name" : "text_3",
+                "row" : 8,
+                "rowspan" : 1,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#FFFFFF",
+                  "borderEdges" : [
+                    "top"
+                  ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 10,
+                "column" : 1,
+                "name" : "listselector_1",
+                "row" : 9,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 14,
+                "column" : 12,
+                "name" : "listselector_2",
+                "row" : 9,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 14,
+                "column" : 1,
+                "name" : "number_1",
+                "row" : 14,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 14,
+                "column" : 24,
+                "name" : "number_2",
+                "row" : 14,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "rgba(255, 255, 255, 0)",
+                  "borderColor" : "#98B1FF",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 8,
+                  "borderWidth" : 2
+                }
+              },
+              {
+                "colspan" : 13,
+                "column" : 1,
+                "name" : "chart_1",
+                "row" : 18,
+                "rowspan" : 24,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 14,
+                "column" : 15,
+                "name" : "chart_2",
+                "row" : 18,
+                "rowspan" : 24,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 13,
+                "column" : 30,
+                "name" : "chart_3",
+                "row" : 18,
+                "rowspan" : 24,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 13,
+                "column" : 1,
+                "name" : "chart_4",
+                "row" : 43,
+                "rowspan" : 24,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 14,
+                "column" : 15,
+                "name" : "chart_5",
+                "row" : 43,
+                "rowspan" : 24,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 13,
+                "column" : 30,
+                "name" : "chart_6",
+                "row" : 43,
+                "rowspan" : 24,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 20,
+                "column" : 1,
+                "name" : "chart_7",
+                "row" : 68,
+                "rowspan" : 20,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 21,
+                "column" : 22,
+                "name" : "chart_8",
+                "row" : 68,
+                "rowspan" : 20,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 42,
+                "column" : 1,
+                "name" : "table_1",
+                "row" : 89,
+                "rowspan" : 26,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [ ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#091A3E",
+          "cellSpacingX" : 4,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#C5D3E0"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "lens_10_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "lens_10",
+        "query" : {
+          "aggregateFilters" : [ ],
+          "columnGroups" : [ ],
+          "columnTotals" : [ ],
+          "limit" : 2000,
+          "orders" : [
+            [
+              "B",
+              {
+                "ascending" : false
+              },
+              [ ]
+            ]
+          ],
+          "rowTotals" : [ ],
+          "sourceFilters" : { },
+          "sources" : [
+            {
+              "columns" : [
+                {
+                  "field" : [
+                    "sum",
+                    "Total_Amount_of_Payment_USDollars"
+                  ],
+                  "name" : "B"
+                },
+                {
+                  "field" : [
+                    "count",
+                    "*"
+                  ],
+                  "name" : "A"
+                }
+              ],
+              "filters" : [ ],
+              "groups" : [
+                "Form_of_Payment_or_Transfer_of_Value"
+              ],
+              "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.FullyQualifiedName}"
+            }
+          ]
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "centerText" : "",
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "showMeasureTitle" : true,
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "pie",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "inner" : 60,
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimension" : [
+                "Form_of_Payment_or_Transfer_of_Value"
+              ],
+              "plots" : [
+                "B"
+              ]
+            },
+            "showActionMenu" : true,
+            "centerValueType" : "number",
+            "valueType" : "compactNumber",
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "lens_9_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "lens_9",
+        "query" : {
+          "aggregateFilters" : [ ],
+          "columnGroups" : [ ],
+          "columnTotals" : [ ],
+          "limit" : 2000,
+          "orders" : [
+            [
+              "B",
+              {
+                "ascending" : false
+              },
+              [ ]
+            ]
+          ],
+          "rowTotals" : [ ],
+          "sourceFilters" : { },
+          "sources" : [
+            {
+              "columns" : [
+                {
+                  "field" : [
+                    "sum",
+                    "Total_Amount_of_Payment_USDollars"
+                  ],
+                  "name" : "B"
+                },
+                {
+                  "field" : [
+                    "count",
+                    "*"
+                  ],
+                  "name" : "A"
+                }
+              ],
+              "filters" : [ ],
+              "groups" : [
+                "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Name"
+              ],
+              "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.FullyQualifiedName}"
+            }
+          ]
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : false,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Name"
+              ],
+              "plots" : [
+                "B",
+                "A"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "lens_10_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "lens_10",
+        "query" : {
+          "aggregateFilters" : [ ],
+          "columnGroups" : [ ],
+          "columnTotals" : [ ],
+          "limit" : 2000,
+          "orders" : [
+            [
+              "B",
+              {
+                "ascending" : false
+              },
+              [ ]
+            ]
+          ],
+          "rowTotals" : [ ],
+          "sourceFilters" : { },
+          "sources" : [
+            {
+              "columns" : [
+                {
+                  "field" : [
+                    "sum",
+                    "Total_Amount_of_Payment_USDollars"
+                  ],
+                  "name" : "B"
+                },
+                {
+                  "field" : [
+                    "count",
+                    "*"
+                  ],
+                  "name" : "A"
+                }
+              ],
+              "filters" : [ ],
+              "groups" : [
+                "Nature_of_Payment_or_Transfer_of_Value"
+              ],
+              "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.FullyQualifiedName}"
+            }
+          ]
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "centerText" : "",
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "showMeasureTitle" : true,
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "pie",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "Form of Payment",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "inner" : 60,
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimension" : [
+                "Nature_of_Payment_or_Transfer_of_Value"
+              ],
+              "plots" : [
+                "B"
+              ]
+            },
+            "showActionMenu" : true,
+            "centerValueType" : "number",
+            "valueType" : "compactNumber",
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Submitting_Applicabl_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "Submitting_Applicable_Manufacturer_or_Applicable_GPO_Name"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "all_3_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "all_3",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ],
+              [
+                "sum",
+                "Total_Amount_of_Payment_USDollars"
+              ]
+            ],
+            "groups" : [
+              "Recipient_State"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "autoZoom" : false,
+            "highColor" : "#1674D9",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "projectionType" : "AlbersUSA",
+            "lowColor" : "#C5DBF7",
+            "visualizationType" : "bubblemap",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "radiusRatio" : 5,
+            "columnMap" : {
+              "r" : [
+                "sum_Total_Amount_of_Payment_USDollars"
+              ],
+              "color" : [
+                "count"
+              ],
+              "trellis" : [ ],
+              "plots" : [
+                "Recipient_State"
+              ]
+            },
+            "showActionMenu" : true,
+            "theme" : "wave",
+            "map" : "US States",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "lens_10_3" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "lens_10",
+        "query" : {
+          "aggregateFilters" : [ ],
+          "columnGroups" : [ ],
+          "columnTotals" : [ ],
+          "limit" : 2000,
+          "orders" : [
+            [
+              "B",
+              {
+                "ascending" : false
+              },
+              [ ]
+            ]
+          ],
+          "rowTotals" : [ ],
+          "sourceFilters" : { },
+          "sources" : [
+            {
+              "columns" : [
+                {
+                  "field" : [
+                    "sum",
+                    "Total_Amount_of_Payment_USDollars"
+                  ],
+                  "name" : "B"
+                },
+                {
+                  "field" : [
+                    "count",
+                    "*"
+                  ],
+                  "name" : "A"
+                }
+              ],
+              "filters" : [ ],
+              "groups" : [
+                "Third_Party_Payment_Recipient_Indicator"
+              ],
+              "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.FullyQualifiedName}"
+            }
+          ]
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "centerText" : "",
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : false,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "showMeasureTitle" : true,
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "pie",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "Third Party Indicator",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "inner" : 60,
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimension" : [
+                "Third_Party_Payment_Recipient_Indicator"
+              ],
+              "plots" : [
+                "B"
+              ]
+            },
+            "showActionMenu" : true,
+            "centerValueType" : "number",
+            "valueType" : "compactNumber",
+            "theme" : "wave",
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "Physician_Name_4_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "Physician_Name_4",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "Physician_Name"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "multi",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Physician_Name"
+              ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "all_3_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "all_3",
+        "query" : {
+          "query" : {
+            "values" : [
+              "Physician_Name",
+              "Covered_Recipient_Specialty_1",
+              "Practitioner_NPI",
+              "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Name",
+              "Date_of_Payment",
+              "Total_Amount_of_Payment_USDollars",
+              "Recipient_State"
+            ],
+            "order" : [
+              [
+                "Total_Amount_of_Payment_USDollars",
+                {
+                  "ascending" : false
+                }
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "options" : { },
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "columnProperties" : { },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "maxColumnWidth" : 300,
+            "minColumnWidth" : 40,
+            "mode" : "variable",
+            "numberOfLines" : 1,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : true,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      },
+      "Product_Category_or__1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "Number_of_Payments_Included_in_Total_Amount"
+              ],
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "Product_Category_or_Therapeutic_Area_2"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Product_Category_or_Therapeutic_Area_2"
+              ],
+              "plots" : [
+                "sum_Number_of_Payments_Included_in_Total_Amount",
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "number_of_payments_i_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "number_of_payments_i_1",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "sum",
+                "Total_Amount_of_Payment_USDollars"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "sum_Total_Amount_of_Payment_USDollars"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "number_of_payments_i_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "number_of_payments_i_1",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [ ],
+              "plots" : [
+                "count"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "lens_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "aggregateFilters" : [ ],
+          "columnGroups" : [ ],
+          "columnTotals" : [ ],
+          "limit" : 2000,
+          "orders" : [
+            [
+              "B",
+              {
+                "ascending" : false
+              },
+              [ ]
+            ]
+          ],
+          "rowTotals" : [ ],
+          "sourceFilters" : { },
+          "sources" : [
+            {
+              "columns" : [
+                {
+                  "field" : [
+                    "sum",
+                    "Total_Amount_of_Payment_USDollars"
+                  ],
+                  "name" : "B"
+                },
+                {
+                  "field" : [
+                    "count",
+                    "*"
+                  ],
+                  "name" : "A"
+                }
+              ],
+              "filters" : [ ],
+              "groups" : [
+                "Physician_Name"
+              ],
+              "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.FullyQualifiedName}"
+            }
+          ]
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "showValues" : true,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "Physician_Name"
+              ],
+              "plots" : [
+                "B",
+                "A"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      },
+      "lens_2" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "aggregateFilters" : [ ],
+          "columnGroups" : [ ],
+          "columnTotals" : [ ],
+          "limit" : 2000,
+          "orders" : [
+            [
+              "Date_of_Payment_Week",
+              {
+                "ascending" : true
+              },
+              [ ]
+            ]
+          ],
+          "rowTotals" : [ ],
+          "sourceFilters" : { },
+          "sources" : [
+            {
+              "columns" : [
+                {
+                  "field" : [
+                    "sum",
+                    "Total_Amount_of_Payment_USDollars"
+                  ],
+                  "name" : "B"
+                }
+              ],
+              "filters" : [ ],
+              "groups" : [
+                "Date_of_Payment_Week"
+              ],
+              "name" : "${App.Datasets.ITT_Sunshine_2021_Transformed_tp.FullyQualifiedName}"
+            }
+          ]
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "showPoints" : false,
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "content" : {
+                "legend" : {
+                  "showBinLabel" : true,
+                  "measures" : [ ],
+                  "showNullValues" : true,
+                  "customizeLegend" : false,
+                  "showPercentage" : true,
+                  "showDimensions" : true,
+                  "showMeasures" : true,
+                  "dimensions" : [ ]
+                }
+              }
+            },
+            "visualizationType" : "time",
+            "missingValue" : "connect",
+            "dashLine" : {
+              "measures" : "",
+              "showDashLine" : false
+            },
+            "timeAxis" : {
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : ""
+            },
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnMap" : {
+              "split" : [ ],
+              "timeAxis" : [
+                "Date_of_Payment_Week"
+              ],
+              "trellis" : [ ],
+              "plots" : [
+                "B"
+              ]
+            },
+            "fillArea" : true,
+            "showActionMenu" : true,
+            "showZero" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "valueType" : "none",
+            "theme" : "wave",
+            "applyConditionalFormatting" : true,
+            "drawArea" : {
+              "measure" : "",
+              "showDrawArea" : false,
+              "bounding1" : "",
+              "bounding2" : ""
+            }
+          },
+          "type" : "chart"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "#091A3E",
+      "borderColor" : "#98B1FF",
+      "borderEdges" : [
+        "all"
+      ],
+      "borderRadius" : 8,
+      "borderWidth" : 2
+    },
+    "widgets" : {
+      "listselector_2" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "Submitting_Applicabl_1",
+          "title" : "Vendor"
+        },
+        "type" : "listselector"
+      },
+      "link_3" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Network Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "NETWORK",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_4" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Payermix Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "PAYER MIX",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_1" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Target Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "TARGET",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "link_2" : {
+        "parameters" : {
+          "destinationLink" : {
+            "name" : "${App.Dashboards['ITT Sunshine Payments Dashboard'].Name}",
+            "namespace" : "${Org.Namespace}"
+          },
+          "destinationType" : "dashboard",
+          "fontSize" : 18,
+          "includeState" : false,
+          "text" : "SUNSHINE",
+          "textAlignment" : "center",
+          "textColor" : "#FFFFFF"
+        },
+        "type" : "link"
+      },
+      "table_1" : {
+        "parameters" : {
+          "borderColor" : "#54698d",
+          "borderWidth" : 1,
+          "cell" : {
+            "backgroundColor" : "#16325c",
+            "fontColor" : "#ffffff",
+            "fontSize" : 12,
+            "textWrap" : false
+          },
+          "columnProperties" : { },
+          "columns" : [ ],
+          "customBulkActions" : [ ],
+          "exploreLink" : true,
+          "header" : {
+            "backgroundColor" : "#000000",
+            "fontColor" : "#ffffff",
+            "fontSize" : 12,
+            "textWrap" : false
+          },
+          "innerMajorBorderColor" : "#54698d",
+          "innerMinorBorderColor" : "#54698d",
+          "mode" : "fittocontainer",
+          "numberOfLines" : 1,
+          "showActionMenu" : true,
+          "showRowIndexColumn" : true,
+          "step" : "all_3_2",
+          "totals" : true,
+          "verticalPadding" : 8
+        },
+        "type" : "table"
+      },
+      "number_2" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "sum_Total_Amount_of_Payment_USDollars",
+          "numberColor" : "#FFFFFF",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "number_of_payments_i_2",
+          "textAlignment" : "left",
+          "title" : "Total Amount",
+          "titleColor" : "#FFFFFF",
+          "titleSize" : 18,
+          "tooltip" : {
+            "customizeTooltip" : false
+          }
+        },
+        "type" : "number"
+      },
+      "container_1" : {
+        "parameters" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "fit" : "original"
+        },
+        "type" : "container"
+      },
+      "number_1" : {
+        "parameters" : {
+          "compact" : true,
+          "exploreLink" : true,
+          "measureField" : "count",
+          "numberColor" : "#FFFFFF",
+          "numberSize" : 24,
+          "showActionMenu" : true,
+          "step" : "number_of_payments_i_1",
+          "textAlignment" : "left",
+          "title" : "Number of Payments",
+          "titleColor" : "#FFFFFF",
+          "titleSize" : 18,
+          "tooltip" : {
+            "customizeTooltip" : false
+          }
+        },
+        "type" : "number"
+      },
+      "chart_6" : {
+        "parameters" : {
+          "centerText" : "",
+          "autoFitMode" : "keepLabels",
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : false,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "showMeasureTitle" : true,
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "pie",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Third Party Indicator",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "inner" : 60,
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimension" : [
+              "Third_Party_Payment_Recipient_Indicator"
+            ],
+            "plots" : [
+              "B"
+            ]
+          },
+          "showActionMenu" : true,
+          "centerValueType" : "number",
+          "valueType" : "compactNumber",
+          "theme" : "dark",
+          "step" : "lens_10_3",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "text_3" : {
+        "parameters" : {
+          "content" : {
+            "richTextContent" : [
+              {
+                "attributes" : {
+                  "color" : "#091a3e",
+                  "size" : "16px"
+                },
+                "insert" : "Add text..."
+              },
+              {
+                "attributes" : {
+                  "align" : "left"
+                },
+                "insert" : "\n"
+              }
+            ]
+          },
+          "showActionMenu" : true
+        },
+        "type" : "text"
+      },
+      "chart_5" : {
+        "parameters" : {
+          "centerText" : "",
+          "autoFitMode" : "keepLabels",
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : false,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "showMeasureTitle" : true,
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "pie",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Nature of Payment",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "inner" : 60,
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimension" : [
+              "Nature_of_Payment_or_Transfer_of_Value"
+            ],
+            "plots" : [
+              "B"
+            ]
+          },
+          "showActionMenu" : true,
+          "centerValueType" : "number",
+          "valueType" : "compactNumber",
+          "theme" : "dark",
+          "step" : "lens_10_2",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "text_2" : {
+        "parameters" : {
+          "content" : {
+            "richTextContent" : [
+              {
+                "attributes" : {
+                  "color" : "#ffffff",
+                  "size" : "24px"
+                },
+                "insert" : "INTELLIGENT TARGETING TOOL"
+              },
+              {
+                "attributes" : {
+                  "align" : "center"
+                },
+                "insert" : "\n"
+              }
+            ]
+          },
+          "showActionMenu" : true
+        },
+        "type" : "text"
+      },
+      "listselector_1" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "Physician_Name_4_1",
+          "title" : "Practitioner"
+        },
+        "type" : "listselector"
+      },
+      "chart_8" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "autoZoom" : false,
+          "highColor" : "#1674D9",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "projectionType" : "AlbersUSA",
+          "lowColor" : "#C5DBF7",
+          "visualizationType" : "bubblemap",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "radiusRatio" : 5,
+          "columnMap" : {
+            "r" : [
+              "sum_Total_Amount_of_Payment_USDollars"
+            ],
+            "color" : [
+              "count"
+            ],
+            "trellis" : [ ],
+            "plots" : [
+              "Recipient_State"
+            ]
+          },
+          "showActionMenu" : true,
+          "theme" : "dark",
+          "step" : "all_3_1",
+          "map" : "US States",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_7" : {
+        "parameters" : {
+          "showPoints" : false,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "missingValue" : "connect",
+          "visualizationType" : "time",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Date of Payment by Amount",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "showZero" : true,
+          "valueType" : "none",
+          "theme" : "dark",
+          "dimensionAxis" : {
+            "showTitle" : true,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true,
+          "drawArea" : {
+            "measure" : "",
+            "showDrawArea" : false,
+            "bounding1" : "",
+            "bounding2" : ""
+          },
+          "autoFitMode" : "keepLabels",
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "dashLine" : {
+            "measures" : "",
+            "showDashLine" : false
+          },
+          "timeAxis" : {
+            "showTitle" : false,
+            "showAxis" : true,
+            "title" : ""
+          },
+          "fillArea" : true,
+          "columnMap" : {
+            "split" : [ ],
+            "timeAxis" : [
+              "Date_of_Payment_Week"
+            ],
+            "trellis" : [ ],
+            "plots" : [
+              "B"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : false,
+            "showAxis" : true,
+            "title" : "Amount",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "step" : "lens_2"
+        },
+        "type" : "chart"
+      },
+      "chart_2" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "showValues" : true,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Vendor",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Name"
+            ],
+            "plots" : [
+              "B",
+              "A"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "lens_9_1",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "Vendor",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_1" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "showValues" : true,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : false,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Physician Name",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Physician_Name"
+            ],
+            "plots" : [
+              "B",
+              "A"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "lens_1",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_4" : {
+        "parameters" : {
+          "centerText" : "",
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : false,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "showMeasureTitle" : true,
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "pie",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Form of Payment",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "inner" : 60,
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimension" : [
+              "Form_of_Payment_or_Transfer_of_Value"
+            ],
+            "plots" : [
+              "B"
+            ]
+          },
+          "showActionMenu" : true,
+          "centerValueType" : "number",
+          "valueType" : "compactNumber",
+          "theme" : "dark",
+          "step" : "lens_10_1",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_3" : {
+        "parameters" : {
+          "autoFitMode" : "keepLabels",
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "showValues" : true,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "axisMode" : "multi",
+          "tooltip" : {
+            "content" : {
+              "legend" : {
+                "showBinLabel" : true,
+                "measures" : [ ],
+                "showNullValues" : true,
+                "customizeLegend" : false,
+                "showPercentage" : true,
+                "showDimensions" : true,
+                "showMeasures" : true,
+                "dimensions" : [ ]
+              }
+            }
+          },
+          "visualizationType" : "hbar",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Product Category / Therapy",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "chartsPerLine" : 4
+          },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimensionAxis" : [
+              "Product_Category_or_Therapeutic_Area_2"
+            ],
+            "plots" : [
+              "sum_Number_of_Payments_Included_in_Total_Amount",
+              "count"
+            ]
+          },
+          "showActionMenu" : true,
+          "measureAxis2" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "measureAxis1" : {
+            "sqrtScale" : false,
+            "showTitle" : true,
+            "showAxis" : true,
+            "title" : "",
+            "customDomain" : {
+              "showDomain" : false
+            }
+          },
+          "theme" : "dark",
+          "step" : "Product_Category_or__1",
+          "dimensionAxis" : {
+            "showTitle" : false,
+            "customSize" : "auto",
+            "showAxis" : true,
+            "title" : "",
+            "icons" : {
+              "useIcons" : false,
+              "iconProps" : {
+                "fit" : "cover",
+                "column" : "",
+                "type" : "round"
+              }
+            }
+          },
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      }
+    }
+  }
+}

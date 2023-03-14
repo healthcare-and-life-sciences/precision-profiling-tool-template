@@ -1,0 +1,1306 @@
+{
+  "name" : "ITT_Network_Recipe",
+  "label" : "ITT Network Recipe",
+  "scheduleExpression" : null,
+  "publishingTarget" : "DATASET",
+  "format" : "R3",
+  "scheduleType" : null,
+  "recipeDefinition" : {
+    "version" : "56.0",
+    "nodes" : {
+      "TO_MEASURE0" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION17"
+        ],
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "GRP2_VOLUME_TERR_RANK",
+              "newProperties" : {
+                "label" : "GRP2_VOLUME_TERR_RANK To Measure",
+                "name" : "GRP2_VOLUME_TERR_RANK_to_measure",
+                "typeProperties" : {
+                  "type" : "NUMBER",
+                  "scale" : 2,
+                  "precision" : 18
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_MEASURE1" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_MEASURE0"
+        ],
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "GRP2_VOLUME_NATL_RANK",
+              "newProperties" : {
+                "label" : "GRP2_VOLUME_NATL_RANK To Measure",
+                "name" : "GRP2_VOLUME_NATL_RANK_to_measure",
+                "typeProperties" : {
+                  "type" : "NUMBER",
+                  "scale" : 2,
+                  "precision" : 18
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_MEASURE2" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_MEASURE1"
+        ],
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "GRP1_VOLUME_NATL_RANK",
+              "newProperties" : {
+                "label" : "GRP1_VOLUME_NATL_RANK To Measure",
+                "name" : "GRP1_VOLUME_NATL_RANK_to_measure",
+                "typeProperties" : {
+                  "type" : "NUMBER",
+                  "scale" : 2,
+                  "precision" : 18
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_MEASURE3" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_MEASURE2"
+        ],
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "GRP1_VOLUME_TERR_RANK",
+              "newProperties" : {
+                "label" : "GRP1_VOLUME_TERR_RANK To Measure",
+                "name" : "GRP1_VOLUME_TERR_RANK_to_measure",
+                "typeProperties" : {
+                  "type" : "NUMBER",
+                  "scale" : 2,
+                  "precision" : 18
+                }
+              }
+            }
+          ]
+        }
+      },
+      "FORMULA0" : {
+        "action" : "formula",
+        "sources" : [
+          "TO_MEASURE3"
+        ],
+        "parameters" : {
+          "expressionType" : "SQL",
+          "fields" : [
+            {
+              "type" : "TEXT",
+              "name" : "Bucket",
+              "label" : "Bucket",
+              "formulaExpression" : "'DBS'",
+              "precision" : 255,
+              "defaultValue" : ""
+            }
+          ]
+        }
+      },
+      "OUTPUT0" : {
+        "action" : "save",
+        "sources" : [
+          "FORMULA2"
+        ],
+        "parameters" : {
+          "fields" : [ ],
+          "dataset" : {
+            "type" : "analyticsDataset",
+            "label" : "ITT_Network_Transformed",
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}",
+            "folderName" : "${App.Folder.FullyQualifiedName}"
+          },
+          "measuresToCurrencies" : [ ]
+        }
+      },
+      "JOIN0" : {
+        "action" : "join",
+        "sources" : [
+          "FORMULA0",
+          "LOAD_DATASET1"
+        ],
+        "schema" : {
+          "fields" : [ ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "Contact1.NPI__c"
+            ]
+          }
+        },
+        "parameters" : {
+          "joinType" : "LOOKUP",
+          "leftKeys" : [
+            "NPI_1"
+          ],
+          "rightQualifier" : "Contact1",
+          "rightKeys" : [
+            "NPI__c"
+          ]
+        }
+      },
+      "LOAD_DATASET1" : {
+        "action" : "load",
+        "sources" : [ ],
+        "parameters" : {
+          "fields" : [
+            "Id",
+            "NPI__c"
+          ],
+          "dataset" : {
+            "type" : "connectedDataset",
+            "label" : "Contact",
+            "connectionName" : "SFDC_LOCAL",
+            "sourceObjectName" : "Contact"
+          },
+          "sampleDetails" : {
+            "type" : "TopN",
+            "sortBy" : [ ]
+          }
+        }
+      },
+      "JOIN1" : {
+        "action" : "join",
+        "sources" : [
+          "JOIN0",
+          "LOAD_DATASET2"
+        ],
+        "schema" : {
+          "fields" : [ ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "Contact2.NPI__c"
+            ]
+          }
+        },
+        "parameters" : {
+          "joinType" : "LOOKUP",
+          "leftKeys" : [
+            "NPI_2"
+          ],
+          "rightQualifier" : "Contact2",
+          "rightKeys" : [
+            "NPI__c"
+          ]
+        }
+      },
+      "LOAD_DATASET2" : {
+        "action" : "load",
+        "sources" : [ ],
+        "parameters" : {
+          "fields" : [
+            "Id",
+            "NPI__c"
+          ],
+          "dataset" : {
+            "type" : "connectedDataset",
+            "label" : "Contact",
+            "connectionName" : "SFDC_LOCAL",
+            "sourceObjectName" : "Contact"
+          },
+          "sampleDetails" : {
+            "type" : "TopN",
+            "sortBy" : [ ]
+          }
+        }
+      },
+      "FORMULA1" : {
+        "action" : "formula",
+        "sources" : [
+          "JOIN1"
+        ],
+        "parameters" : {
+          "expressionType" : "SQL",
+          "fields" : [
+            {
+              "type" : "TEXT",
+              "name" : "NAME_1",
+              "label" : "NAME_1",
+              "formulaExpression" : "concat(FIRST_1,' ',LAST_1)",
+              "precision" : 255,
+              "defaultValue" : ""
+            }
+          ]
+        }
+      },
+      "FORMULA2" : {
+        "action" : "formula",
+        "sources" : [
+          "FORMULA1"
+        ],
+        "parameters" : {
+          "expressionType" : "SQL",
+          "fields" : [
+            {
+              "type" : "TEXT",
+              "name" : "NAME_2",
+              "label" : "NAME_2",
+              "formulaExpression" : "concat(FIRST_2,' ',LAST_2)",
+              "precision" : 255,
+              "defaultValue" : ""
+            }
+          ]
+        }
+      },
+      "LOAD_DATASET3" : {
+        "action" : "load",
+        "sources" : [ ],
+        "parameters" : {
+          "fields" : [
+            "COUNTY_2",
+            "COUNTY_1",
+            "HMS_SPEC1_2",
+            "ADDRESS1_2",
+            "HMS_PIID1",
+            "HMS_PIID2",
+            "HMS_SPEC1_1",
+            "ADDRESS1_1",
+            "SUFFIX_1",
+            "LAST_2",
+            "LAST_1",
+            "SUFFIX_2",
+            "PRACTITIONER_TYPE_2",
+            "PRACTITIONER_TYPE_1",
+            "HMS_SPEC2_2",
+            "MIDDLE_2",
+            "HMS_SPEC2_1",
+            "ADDRESS2_1",
+            "ADDRESS2_2",
+            "MIDDLE_1",
+            "STATE_2",
+            "STATE_1",
+            "CITY_1",
+            "CITY_2",
+            "FIRST_1",
+            "FIRST_2",
+            "CRED_1",
+            "CRED_2",
+            "GRP2_VOLUME_NATL_RANK",
+            "FAX_2",
+            "PHONE2_1",
+            "PHONE2_2",
+            "GRP1_VOLUME_NATL_RANK",
+            "FAX_1",
+            "TERR_SOR_VALUE",
+            "TERR_NUM_CONN_GRP2_ENTITIES",
+            "NATL_NUM_CONN_GRP2_ENTITIES",
+            "GRP1_VOLUME_TERR_RANK",
+            "PCT2",
+            "PCT1",
+            "SharedPatientCount",
+            "NPI_1",
+            "NPI_2",
+            "PHONE1_1",
+            "NATL_NUM_CONN_GRP1_ENTITIES",
+            "PHONE1_2",
+            "GRP2_VOLUME_TERR_RANK",
+            "NATL_SOR_VALUE",
+            "ZIP_2",
+            "ZIP_1",
+            "ZIP4_2",
+            "ZIP4_1",
+            "TERR_NUM_CONN_GRP1_ENTITIES"
+          ],
+          "dataset" : {
+            "type" : "analyticsDataset",
+            "label" : "ITT_Network",
+            "name" : "${App.Datasets.ITT_Network.FullyQualifiedName}"
+          },
+          "sampleDetails" : {
+            "type" : "TopN",
+            "sortBy" : [ ]
+          }
+        }
+      },
+      "TO_DIMENSION0" : {
+        "action" : "typeCast",
+        "sources" : [
+          "LOAD_DATASET3"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "GRP2_VOLUME_NATL_RANK_to_dimension",
+              "newProperties" : {
+                "name" : "GRP2_VOLUME_NATL_RANK"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "GRP2_VOLUME_NATL_RANK"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "GRP2_VOLUME_NATL_RANK",
+              "newProperties" : {
+                "label" : "GRP2_VOLUME_NATL_RANK",
+                "name" : "GRP2_VOLUME_NATL_RANK_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION1" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION0"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "FAX_2_to_dimension",
+              "newProperties" : {
+                "name" : "FAX_2"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "FAX_2"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "FAX_2",
+              "newProperties" : {
+                "label" : "FAX_2",
+                "name" : "FAX_2_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION2" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION1"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "PHONE2_1_to_dimension",
+              "newProperties" : {
+                "name" : "PHONE2_1"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "PHONE2_1"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "PHONE2_1",
+              "newProperties" : {
+                "label" : "PHONE2_1",
+                "name" : "PHONE2_1_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION3" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION2"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "PHONE2_2_to_dimension",
+              "newProperties" : {
+                "name" : "PHONE2_2"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "PHONE2_2"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "PHONE2_2",
+              "newProperties" : {
+                "label" : "PHONE2_2",
+                "name" : "PHONE2_2_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION4" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION3"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "GRP1_VOLUME_NATL_RANK_to_dimension",
+              "newProperties" : {
+                "name" : "GRP1_VOLUME_NATL_RANK"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "GRP1_VOLUME_NATL_RANK"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "GRP1_VOLUME_NATL_RANK",
+              "newProperties" : {
+                "label" : "GRP1_VOLUME_NATL_RANK",
+                "name" : "GRP1_VOLUME_NATL_RANK_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION5" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION4"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "FAX_1_to_dimension",
+              "newProperties" : {
+                "name" : "FAX_1"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "FAX_1"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "FAX_1",
+              "newProperties" : {
+                "label" : "FAX_1",
+                "name" : "FAX_1_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION6" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION5"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "TERR_SOR_VALUE_to_dimension",
+              "newProperties" : {
+                "name" : "TERR_SOR_VALUE"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "TERR_SOR_VALUE"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "TERR_SOR_VALUE",
+              "newProperties" : {
+                "label" : "TERR_SOR_VALUE",
+                "name" : "TERR_SOR_VALUE_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION7" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION6"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "GRP1_VOLUME_TERR_RANK_to_dimension",
+              "newProperties" : {
+                "name" : "GRP1_VOLUME_TERR_RANK"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "GRP1_VOLUME_TERR_RANK"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "GRP1_VOLUME_TERR_RANK",
+              "newProperties" : {
+                "label" : "GRP1_VOLUME_TERR_RANK",
+                "name" : "GRP1_VOLUME_TERR_RANK_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION8" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION7"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "NPI_1_to_dimension",
+              "newProperties" : {
+                "name" : "NPI_1"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "NPI_1"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "NPI_1",
+              "newProperties" : {
+                "label" : "NPI_1",
+                "name" : "NPI_1_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION9" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION8"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "NPI_2_to_dimension",
+              "newProperties" : {
+                "name" : "NPI_2"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "NPI_2"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "NPI_2",
+              "newProperties" : {
+                "label" : "NPI_2",
+                "name" : "NPI_2_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION10" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION9"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "PHONE1_1_to_dimension",
+              "newProperties" : {
+                "name" : "PHONE1_1"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "PHONE1_1"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "PHONE1_1",
+              "newProperties" : {
+                "label" : "PHONE1_1",
+                "name" : "PHONE1_1_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION11" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION10"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "PHONE1_2_to_dimension",
+              "newProperties" : {
+                "name" : "PHONE1_2"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "PHONE1_2"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "PHONE1_2",
+              "newProperties" : {
+                "label" : "PHONE1_2",
+                "name" : "PHONE1_2_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION12" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION11"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "ZIP_2_to_dimension",
+              "newProperties" : {
+                "name" : "ZIP_2"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "ZIP_2"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "ZIP_2",
+              "newProperties" : {
+                "label" : "ZIP_2",
+                "name" : "ZIP_2_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION13" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION12"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "ZIP_1_to_dimension",
+              "newProperties" : {
+                "name" : "ZIP_1"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "ZIP_1"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "ZIP_1",
+              "newProperties" : {
+                "label" : "ZIP_1",
+                "name" : "ZIP_1_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION14" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION13"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "GRP2_VOLUME_TERR_RANK_to_dimension",
+              "newProperties" : {
+                "name" : "GRP2_VOLUME_TERR_RANK"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "GRP2_VOLUME_TERR_RANK"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "GRP2_VOLUME_TERR_RANK",
+              "newProperties" : {
+                "label" : "GRP2_VOLUME_TERR_RANK",
+                "name" : "GRP2_VOLUME_TERR_RANK_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION15" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION14"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "NATL_SOR_VALUE_to_dimension",
+              "newProperties" : {
+                "name" : "NATL_SOR_VALUE"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "NATL_SOR_VALUE"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "NATL_SOR_VALUE",
+              "newProperties" : {
+                "label" : "NATL_SOR_VALUE",
+                "name" : "NATL_SOR_VALUE_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION16" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION15"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "ZIP4_2_to_dimension",
+              "newProperties" : {
+                "name" : "ZIP4_2"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "ZIP4_2"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "ZIP4_2",
+              "newProperties" : {
+                "label" : "ZIP4_2",
+                "name" : "ZIP4_2_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      },
+      "TO_DIMENSION17" : {
+        "action" : "typeCast",
+        "sources" : [
+          "TO_DIMENSION16"
+        ],
+        "schema" : {
+          "fields" : [
+            {
+              "name" : "ZIP4_1_to_dimension",
+              "newProperties" : {
+                "name" : "ZIP4_1"
+              }
+            }
+          ],
+          "slice" : {
+            "mode" : "DROP",
+            "ignoreMissingFields" : true,
+            "fields" : [
+              "ZIP4_1"
+            ]
+          }
+        },
+        "parameters" : {
+          "fields" : [
+            {
+              "name" : "ZIP4_1",
+              "newProperties" : {
+                "label" : "ZIP4_1",
+                "name" : "ZIP4_1_to_dimension",
+                "typeProperties" : {
+                  "type" : "TEXT",
+                  "length" : 255
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "ui" : {
+      "nodes" : {
+        "TRANSFORM0" : {
+          "label" : "Create Measures",
+          "description" : "Take Rank columns (3) and create new additional Measure columns from them.  Also, add \"DBS\" as the bucket.",
+          "type" : "TRANSFORM",
+          "top" : 112,
+          "left" : 392.2,
+          "graph" : {
+            "TO_MEASURE0" : null,
+            "TO_MEASURE1" : null,
+            "TO_MEASURE2" : null,
+            "TO_MEASURE3" : null,
+            "FORMULA0" : {
+              "parameters" : {
+                "type" : "BASE_FORMULA_UI"
+              }
+            }
+          },
+          "connectors" : [
+            {
+              "source" : "TO_MEASURE0",
+              "target" : "TO_MEASURE1"
+            },
+            {
+              "source" : "TO_MEASURE1",
+              "target" : "TO_MEASURE2"
+            },
+            {
+              "source" : "TO_MEASURE2",
+              "target" : "TO_MEASURE3"
+            },
+            {
+              "source" : "TO_MEASURE3",
+              "target" : "FORMULA0"
+            }
+          ]
+        },
+        "OUTPUT0" : {
+          "label" : "ITT_Network_Transformed",
+          "type" : "OUTPUT",
+          "top" : 112,
+          "left" : 952.2
+        },
+        "JOIN0" : {
+          "label" : "Add NPI_1 Record ID",
+          "description" : "Use NPI_1 to look up the Salesforce Contact record and get the Record ID.",
+          "type" : "JOIN",
+          "top" : 112,
+          "left" : 532.2
+        },
+        "LOAD_DATASET1" : {
+          "label" : "Contact",
+          "type" : "LOAD_DATASET",
+          "top" : 252,
+          "left" : 112,
+          "parameters" : {
+            "sampleSize" : 2000
+          }
+        },
+        "JOIN1" : {
+          "label" : "Add NPI_2 Record Id",
+          "description" : "Use NPI_2 to lookup the Salesforce Contact record and get the ID.",
+          "type" : "JOIN",
+          "top" : 112,
+          "left" : 672.2
+        },
+        "LOAD_DATASET2" : {
+          "label" : "Contact",
+          "type" : "LOAD_DATASET",
+          "top" : 392,
+          "left" : 112,
+          "parameters" : {
+            "sampleSize" : 2000
+          }
+        },
+        "TRANSFORM1" : {
+          "label" : "Create Full Names",
+          "description" : "Create Name_1 and Name_2 from First/Last_1 and First/Last_2.",
+          "type" : "TRANSFORM",
+          "top" : 112,
+          "left" : 812.2,
+          "graph" : {
+            "FORMULA1" : {
+              "parameters" : {
+                "type" : "BASE_FORMULA_UI"
+              },
+              "label" : "Create Full Name_1"
+            },
+            "FORMULA2" : {
+              "parameters" : {
+                "type" : "BASE_FORMULA_UI"
+              },
+              "label" : "Create Full Name 2"
+            }
+          },
+          "connectors" : [
+            {
+              "source" : "FORMULA1",
+              "target" : "FORMULA2"
+            }
+          ]
+        },
+        "LOAD_DATASET3" : {
+          "label" : "ITT_Network",
+          "type" : "LOAD_DATASET",
+          "top" : 112,
+          "left" : 112,
+          "parameters" : {
+            "sampleSize" : 2000
+          }
+        },
+        "TRANSFORM2" : {
+          "label" : "Transform Numeric to Dimension",
+          "description" : "Transform input Numeric fields to Dimension (text) as appropriate.",
+          "type" : "TRANSFORM",
+          "top" : 112,
+          "left" : 252.2,
+          "graph" : {
+            "TO_DIMENSION0" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION1" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION2" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION3" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION4" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION5" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION6" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION7" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION8" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION9" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION10" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION11" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION12" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION13" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION14" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION15" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION16" : {
+              "label" : "To Text"
+            },
+            "TO_DIMENSION17" : {
+              "label" : "To Text"
+            }
+          },
+          "connectors" : [
+            {
+              "source" : "TO_DIMENSION0",
+              "target" : "TO_DIMENSION1"
+            },
+            {
+              "source" : "TO_DIMENSION1",
+              "target" : "TO_DIMENSION2"
+            },
+            {
+              "source" : "TO_DIMENSION2",
+              "target" : "TO_DIMENSION3"
+            },
+            {
+              "source" : "TO_DIMENSION3",
+              "target" : "TO_DIMENSION4"
+            },
+            {
+              "source" : "TO_DIMENSION4",
+              "target" : "TO_DIMENSION5"
+            },
+            {
+              "source" : "TO_DIMENSION5",
+              "target" : "TO_DIMENSION6"
+            },
+            {
+              "source" : "TO_DIMENSION6",
+              "target" : "TO_DIMENSION7"
+            },
+            {
+              "source" : "TO_DIMENSION7",
+              "target" : "TO_DIMENSION8"
+            },
+            {
+              "source" : "TO_DIMENSION8",
+              "target" : "TO_DIMENSION9"
+            },
+            {
+              "source" : "TO_DIMENSION9",
+              "target" : "TO_DIMENSION10"
+            },
+            {
+              "source" : "TO_DIMENSION10",
+              "target" : "TO_DIMENSION11"
+            },
+            {
+              "source" : "TO_DIMENSION11",
+              "target" : "TO_DIMENSION12"
+            },
+            {
+              "source" : "TO_DIMENSION12",
+              "target" : "TO_DIMENSION13"
+            },
+            {
+              "source" : "TO_DIMENSION13",
+              "target" : "TO_DIMENSION14"
+            },
+            {
+              "source" : "TO_DIMENSION14",
+              "target" : "TO_DIMENSION15"
+            },
+            {
+              "source" : "TO_DIMENSION15",
+              "target" : "TO_DIMENSION16"
+            },
+            {
+              "source" : "TO_DIMENSION16",
+              "target" : "TO_DIMENSION17"
+            }
+          ]
+        }
+      },
+      "connectors" : [
+        {
+          "source" : "TRANSFORM1",
+          "target" : "OUTPUT0"
+        },
+        {
+          "source" : "TRANSFORM0",
+          "target" : "JOIN0"
+        },
+        {
+          "source" : "LOAD_DATASET1",
+          "target" : "JOIN0"
+        },
+        {
+          "source" : "JOIN0",
+          "target" : "JOIN1"
+        },
+        {
+          "source" : "LOAD_DATASET2",
+          "target" : "JOIN1"
+        },
+        {
+          "source" : "JOIN1",
+          "target" : "TRANSFORM1"
+        },
+        {
+          "source" : "TRANSFORM2",
+          "target" : "TRANSFORM0"
+        },
+        {
+          "source" : "LOAD_DATASET3",
+          "target" : "TRANSFORM2"
+        }
+      ],
+      "hiddenColumns" : [ ]
+    },
+    "runMode" : "full"
+  },
+  "lastTime" : null
+}

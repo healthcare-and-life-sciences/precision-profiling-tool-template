@@ -1,0 +1,848 @@
+{
+  "name" : "ITT_Referred_From_Embedded_tp",
+  "label" : "ITT Practitioner Network From (Embedded)",
+  "description" : "Dashboard design for embedding on a Contact record (Health Cloud Practitioner) and filtered using the NPI__c field.",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [ ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [ ]
+  },
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [ ],
+    "gridLayouts" : [
+      {
+        "name" : "Default",
+        "numColumns" : 42,
+        "pages" : [
+          {
+            "label" : "Referrals From",
+            "name" : "b33f18d4-65f3-4132-951f-17ca11ef08b1",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 18,
+                "column" : 10,
+                "name" : "listselector_1",
+                "row" : 2,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 40,
+                "column" : 1,
+                "name" : "repeater_1",
+                "row" : 8,
+                "rowspan" : 43,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [ ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#091A3E",
+          "cellSpacingX" : 4,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#FFFFFF"
+        },
+        "version" : 1.0
+      },
+      {
+        "name" : "Mobile",
+        "numColumns" : 6,
+        "pages" : [
+          {
+            "label" : "Referrals From",
+            "name" : "b33f18d4-65f3-4132-951f-17ca11ef08b1",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 6,
+                "column" : 0,
+                "name" : "listselector_1",
+                "row" : 1,
+                "rowspan" : 4,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [
+                    "all"
+                  ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 0,
+                "name" : "repeater_1",
+                "row" : 6,
+                "rowspan" : 65,
+                "widgetStyle" : {
+                  "backgroundColor" : "#FFFFFF",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 16,
+                  "borderWidth" : 1
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "fine",
+        "selectors" : [
+          "maxWidth(599)"
+        ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#091A3E",
+          "cellSpacingX" : 8,
+          "cellSpacingY" : 0,
+          "fit" : "original",
+          "gutterColor" : "#FFFFFF"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "NAME_1_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "count",
+                "*"
+              ]
+            ],
+            "groups" : [
+              "NAME_1"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : { }
+      },
+      "lens_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.ITT_Network_Transformed_tp.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "query" : {
+          "query" : {
+            "values" : [
+              "GRP2_VOLUME_NATL_RANK",
+              "COUNTY_2",
+              "COUNTY_1",
+              "HMS_SPEC1_2",
+              "ADDRESS1_2",
+              "GRP1_VOLUME_NATL_RANK_to_measure",
+              "GRP2_VOLUME_TERR_RANK_to_measure",
+              "TERR_SOR_VALUE",
+              "TERR_NUM_CONN_GRP2_ENTITIES",
+              "NATL_NUM_CONN_GRP2_ENTITIES",
+              "ADDRESS1_1",
+              "ADDRESS2_1",
+              "ADDRESS2_2",
+              "Bucket",
+              "CITY_1",
+              "CITY_2",
+              "Contact1.Id",
+              "Contact2.Id",
+              "CRED_1",
+              "CRED_2",
+              "FAX_1",
+              "FAX_2",
+              "FIRST_1",
+              "FIRST_2",
+              "GRP1_VOLUME_NATL_RANK",
+              "GRP1_VOLUME_TERR_RANK",
+              "GRP1_VOLUME_TERR_RANK_to_measure",
+              "GRP2_VOLUME_NATL_RANK_to_measure",
+              "GRP2_VOLUME_TERR_RANK",
+              "HMS_PIID1",
+              "HMS_PIID2",
+              "HMS_SPEC1_1",
+              "HMS_SPEC2_1",
+              "HMS_SPEC2_2",
+              "LAST_1",
+              "LAST_2",
+              "MIDDLE_1",
+              "MIDDLE_2",
+              "NAME_1",
+              "NAME_2",
+              "NATL_NUM_CONN_GRP1_ENTITIES",
+              "NATL_SOR_VALUE",
+              "NPI_1",
+              "NPI_2",
+              "PCT1",
+              "PCT2",
+              "PHONE1_1",
+              "PHONE1_2",
+              "PHONE2_1",
+              "PHONE2_2",
+              "PRACTITIONER_TYPE_1",
+              "PRACTITIONER_TYPE_2",
+              "SharedPatientCount",
+              "STATE_1",
+              "STATE_2",
+              "SUFFIX_1",
+              "SUFFIX_2",
+              "TERR_NUM_CONN_GRP1_ENTITIES",
+              "ZIP4_1",
+              "ZIP4_2",
+              "ZIP_1",
+              "ZIP_2"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "options" : { },
+          "parameters" : {
+            "borderColor" : "#e0e5ee",
+            "borderWidth" : 1,
+            "cell" : {
+              "backgroundColor" : "#ffffff",
+              "fontColor" : "#16325c",
+              "fontSize" : 12,
+              "textWrap" : true
+            },
+            "columnProperties" : {
+              "NPI_1" : {
+                "parameters" : {
+                  "alignment" : "left",
+                  "styles" : {
+                    "linkColor" : "#006dcc"
+                  }
+                },
+                "type" : "text"
+              },
+              "NAME_2" : {
+                "parameters" : {
+                  "alignment" : "left",
+                  "styles" : {
+                    "linkColor" : "#006dcc"
+                  }
+                },
+                "type" : "text"
+              },
+              "NAME_1" : {
+                "parameters" : {
+                  "alignment" : "left",
+                  "styles" : {
+                    "linkColor" : "#006dcc"
+                  }
+                },
+                "type" : "text"
+              }
+            },
+            "columns" : [ ],
+            "customBulkActions" : [ ],
+            "header" : {
+              "backgroundColor" : "#f4f6f9",
+              "fontColor" : "#16325c",
+              "fontSize" : 12,
+              "textWrap" : true
+            },
+            "innerMajorBorderColor" : "#a8b7c7",
+            "innerMinorBorderColor" : "#e0e5ee",
+            "maxColumnWidth" : 300,
+            "minColumnWidth" : 40,
+            "mode" : "variable",
+            "numberOfLines" : 1,
+            "showActionMenu" : true,
+            "showRowIndexColumn" : true,
+            "totals" : true,
+            "verticalPadding" : 8
+          },
+          "type" : "table"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "#091A3E",
+      "borderColor" : "#98B1FF",
+      "borderEdges" : [
+        "all"
+      ],
+      "borderRadius" : 8,
+      "borderWidth" : 2
+    },
+    "widgets" : {
+      "listselector_1" : {
+        "parameters" : {
+          "compact" : false,
+          "displayMode" : "filter",
+          "exploreLink" : false,
+          "filterStyle" : {
+            "titleColor" : "#FFFFFF",
+            "valueColor" : "#FFFFFF"
+          },
+          "instant" : true,
+          "measureField" : "count",
+          "showActionMenu" : true,
+          "step" : "NAME_1_1",
+          "title" : "Referrals from..."
+        },
+        "type" : "listselector"
+      },
+      "repeater_1" : {
+        "parameters" : {
+          "cardProperties" : {
+            "cellSpacingX" : 1,
+            "cellSpacingY" : 0,
+            "numColumns" : 24,
+            "rowHeight" : "fine",
+            "selectedStyles" : {
+              "backgroundColor" : "#091A3E",
+              "borderColor" : "#98B1FF",
+              "borderEdges" : [
+                "all"
+              ],
+              "borderRadius" : 8,
+              "borderWidth" : 2
+            },
+            "styles" : {
+              "backgroundColor" : "#091A3E",
+              "borderColor" : "#E6ECF2",
+              "borderEdges" : [
+                "all"
+              ],
+              "borderRadius" : 4,
+              "borderWidth" : 1,
+              "bottomPadding" : 6,
+              "leftPadding" : 2,
+              "rightPadding" : 4,
+              "topPadding" : 5
+            }
+          },
+          "cellProperties" : {
+            "number_2" : {
+              "parameters" : {
+                "compact" : false,
+                "measureField" : "SharedPatientCount",
+                "numberColor" : "#FFFFFF",
+                "numberSize" : 14,
+                "textAlignment" : "left",
+                "title" : "Shared Patient Count",
+                "titleColor" : "#FFFFFF",
+                "titleSize" : 12
+              },
+              "position" : {
+                "colspan" : 12,
+                "column" : 12,
+                "row" : 6,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "number"
+            },
+            "number_1" : {
+              "parameters" : {
+                "compact" : false,
+                "measureField" : "NATL_NUM_CONN_GRP2_ENTITIES",
+                "numberColor" : "#FFFFFF",
+                "numberSize" : 14,
+                "textAlignment" : "left",
+                "title" : "Connections",
+                "titleColor" : "#FFFFFF",
+                "titleSize" : 12
+              },
+              "position" : {
+                "colspan" : 11,
+                "column" : 0,
+                "row" : 6,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "number"
+            },
+            "text_1" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "14px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : "[NAME_1]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "NAME_1" : {
+                      "field" : "NAME_1",
+                      "sourceType" : "result",
+                      "step" : "lens_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 11,
+                "column" : 0,
+                "row" : 0,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "text_3" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#98b1ff"
+                      },
+                      "insert" : "[CITY_1], [STATE_1]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "STATE_1" : {
+                      "field" : "STATE_1",
+                      "sourceType" : "result",
+                      "step" : "lens_1"
+                    },
+                    "CITY_1" : {
+                      "field" : "CITY_1",
+                      "sourceType" : "result",
+                      "step" : "lens_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 11,
+                "column" : 0,
+                "row" : 2,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "text_2" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "14px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : "[NAME_2]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "NAME_2" : {
+                      "field" : "NAME_2",
+                      "sourceType" : "result",
+                      "step" : "lens_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 12,
+                "column" : 12,
+                "row" : 0,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "text_5" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : "[HMS_SPEC1_1]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "HMS_SPEC1_1" : {
+                      "field" : "HMS_SPEC1_1",
+                      "sourceType" : "result",
+                      "step" : "lens_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 11,
+                "column" : 0,
+                "row" : 4,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "text_4" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#98b1ff"
+                      },
+                      "insert" : "[CITY_2], [STATE_2]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "STATE_2" : {
+                      "field" : "STATE_2",
+                      "sourceType" : "result",
+                      "step" : "lens_1"
+                    },
+                    "CITY_2" : {
+                      "field" : "CITY_2",
+                      "sourceType" : "result",
+                      "step" : "lens_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 12,
+                "column" : 12,
+                "row" : 2,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "chart_2" : {
+              "parameters" : {
+                "rangeWeight" : 20,
+                "max" : 100,
+                "visualizationType" : "bullet",
+                "barWeight" : 4,
+                "medium" : 33,
+                "title" : {
+                  "fontSize" : 14,
+                  "subtitleFontSize" : 11,
+                  "label" : "Patients referred to Practitioner (%)",
+                  "align" : "center",
+                  "subtitleLabel" : ""
+                },
+                "barColor" : "black",
+                "high" : 66,
+                "columnMap" : {
+                  "plots" : [
+                    "PCT1"
+                  ]
+                },
+                "min" : 0,
+                "valueType" : "compactNumber",
+                "theme" : "dark",
+                "applyConditionalFormatting" : true
+              },
+              "position" : {
+                "colspan" : 7,
+                "column" : 4,
+                "row" : 8,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "chart"
+            },
+            "text_6" : {
+              "parameters" : {
+                "content" : {
+                  "richTextContent" : [
+                    {
+                      "attributes" : {
+                        "size" : "12px",
+                        "color" : "#ffffff"
+                      },
+                      "insert" : "[HMS_SPEC1_2]"
+                    },
+                    {
+                      "attributes" : {
+                        "align" : "left"
+                      },
+                      "insert" : "\n"
+                    }
+                  ],
+                  "values" : {
+                    "HMS_SPEC1_2" : {
+                      "field" : "HMS_SPEC1_2",
+                      "sourceType" : "result",
+                      "step" : "lens_1"
+                    }
+                  }
+                }
+              },
+              "position" : {
+                "colspan" : 12,
+                "column" : 12,
+                "row" : 4,
+                "rowspan" : 2,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "text"
+            },
+            "chart_1" : {
+              "parameters" : {
+                "columnMap" : {
+                  "plots" : [
+                    "GRP1_VOLUME_NATL_RANK_to_measure"
+                  ]
+                },
+                "high" : 66,
+                "min" : 0,
+                "max" : 10,
+                "valueType" : "compactNumber",
+                "visualizationType" : "flatgauge",
+                "theme" : "dark",
+                "medium" : 33,
+                "compactDecimalDigits" : -1,
+                "title" : {
+                  "fontSize" : 12,
+                  "subtitleFontSize" : 11,
+                  "label" : "National Rank",
+                  "align" : "center",
+                  "subtitleLabel" : ""
+                },
+                "applyConditionalFormatting" : true
+              },
+              "position" : {
+                "colspan" : 4,
+                "column" : 0,
+                "row" : 8,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "chart"
+            },
+            "chart_4" : {
+              "parameters" : {
+                "rangeWeight" : 20,
+                "max" : 100,
+                "visualizationType" : "bullet",
+                "barWeight" : 4,
+                "medium" : 33,
+                "title" : {
+                  "fontSize" : 14,
+                  "subtitleFontSize" : 11,
+                  "label" : "Patients Seen by Referrer (%)",
+                  "align" : "center",
+                  "subtitleLabel" : ""
+                },
+                "barColor" : "black",
+                "high" : 66,
+                "columnMap" : {
+                  "plots" : [
+                    "GRP1_VOLUME_NATL_RANK_to_measure"
+                  ]
+                },
+                "min" : 0,
+                "valueType" : "compactNumber",
+                "theme" : "dark",
+                "applyConditionalFormatting" : true
+              },
+              "position" : {
+                "colspan" : 8,
+                "column" : 16,
+                "row" : 8,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "chart"
+            },
+            "chart_3" : {
+              "parameters" : {
+                "columnMap" : {
+                  "plots" : [
+                    "NATL_SOR_VALUE"
+                  ]
+                },
+                "high" : 66,
+                "min" : 0,
+                "max" : 10,
+                "valueType" : "compactNumber",
+                "visualizationType" : "flatgauge",
+                "theme" : "dark",
+                "medium" : 33,
+                "compactDecimalDigits" : -1,
+                "title" : {
+                  "fontSize" : 14,
+                  "subtitleFontSize" : 11,
+                  "label" : "SOR",
+                  "align" : "center",
+                  "subtitleLabel" : ""
+                },
+                "applyConditionalFormatting" : true
+              },
+              "position" : {
+                "colspan" : 4,
+                "column" : 12,
+                "row" : 8,
+                "rowspan" : 6,
+                "widgetStyle" : {
+                  "backgroundColor" : "#091A3E",
+                  "borderColor" : "#E6ECF2",
+                  "borderEdges" : [ ],
+                  "borderRadius" : 0,
+                  "borderWidth" : 1
+                }
+              },
+              "type" : "chart"
+            }
+          },
+          "exploreLink" : true,
+          "itemsPerRow" : 1,
+          "showActionMenu" : true,
+          "step" : "lens_1"
+        },
+        "type" : "repeater"
+      }
+    }
+  }
+}
