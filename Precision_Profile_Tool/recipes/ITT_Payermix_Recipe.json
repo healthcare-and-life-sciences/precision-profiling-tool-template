@@ -1,53 +1,53 @@
 {
-  "name" : "ITT_Payermix_Recipe",
-  "label" : "ITT Payermix Recipe",
-  "scheduleExpression" : null,
-  "publishingTarget" : "DATASET",
-  "format" : "R3",
-  "scheduleType" : null,
-  "recipeDefinition" : {
-    "version" : "56.0",
-    "nodes" : {
-      "FORMULA0" : {
-        "action" : "formula",
-        "sources" : [
+  "name": "ITT_Payermix_Recipe",
+  "label": "ITT Payermix Recipe",
+  "scheduleExpression": null,
+  "publishingTarget": "DATASET",
+  "format": "R3",
+  "scheduleType": null,
+  "recipeDefinition": {
+    "version": "56.0",
+    "nodes": {
+      "FORMULA0": {
+        "action": "formula",
+        "sources": [
           "TO_DIMENSION0"
         ],
-        "parameters" : {
-          "expressionType" : "SQL",
-          "fields" : [
+        "parameters": {
+          "expressionType": "SQL",
+          "fields": [
             {
-              "type" : "TEXT",
-              "name" : "Name",
-              "label" : "Name",
-              "formulaExpression" : "concat(FIRST_NAME,' ', LAST_NAME)",
-              "precision" : 255,
-              "defaultValue" : ""
+              "type": "TEXT",
+              "name": "Name",
+              "label": "Name",
+              "formulaExpression": "concat(FIRST_NAME,' ', LAST_NAME)",
+              "precision": 255,
+              "defaultValue": ""
             }
           ]
         }
       },
-      "OUTPUT0" : {
-        "action" : "save",
-        "sources" : [
+      "OUTPUT0": {
+        "action": "save",
+        "sources": [
           "FORMULA0"
         ],
-        "parameters" : {
-          "fields" : [ ],
-          "dataset" : {
-            "type" : "analyticsDataset",
-            "label" : "ITT_Payermix_Transformed",
-            "name" : "${App.Datasets.ITT_Payermix_Transformed_tp.Name}",
-            "folderName" : "${App.Folder.FullyQualifiedName}"
+        "parameters": {
+          "fields": [],
+          "dataset": {
+            "type": "analyticsDataset",
+            "label": "ITT_Payermix_Transformed",
+            "name": "${App.Datasets.ITT_Payermix_Transformed_tp.Name}",
+            "folderName": "${App.Folder.FullyQualifiedName}"
           },
-          "measuresToCurrencies" : [ ]
+          "measuresToCurrencies": []
         }
       },
-      "LOAD_DATASET0" : {
-        "action" : "load",
-        "sources" : [ ],
-        "parameters" : {
-          "fields" : [
+      "LOAD_DATASET0": {
+        "action": "load",
+        "sources": [],
+        "parameters": {
+          "fields": [
             "Payer",
             "HMS_PIID",
             "LAST_NAME",
@@ -56,48 +56,48 @@
             "NPI",
             "PercentOfPatientsPerPractitioner"
           ],
-          "dataset" : {
-            "type" : "analyticsDataset",
-            "label" : "ITT_Payermix",
-            "name" : "${App.Datasets.ITT_Payermix.FullyQualifiedName}"
+          "dataset": {
+            "type": "analyticsDataset",
+            "label": "ITT_Payermix",
+            "name": "${App.Datasets.ITT_Payermix_tp.FullyQualifiedName}"
           },
-          "sampleDetails" : {
-            "type" : "TopN"
+          "sampleDetails": {
+            "type": "TopN"
           }
         }
       },
-      "TO_DIMENSION0" : {
-        "action" : "typeCast",
-        "sources" : [
+      "TO_DIMENSION0": {
+        "action": "typeCast",
+        "sources": [
           "LOAD_DATASET0"
         ],
-        "schema" : {
-          "fields" : [
+        "schema": {
+          "fields": [
             {
-              "name" : "NPI_to_dimension",
-              "newProperties" : {
-                "name" : "NPI"
+              "name": "NPI_to_dimension",
+              "newProperties": {
+                "name": "NPI"
               }
             }
           ],
-          "slice" : {
-            "mode" : "DROP",
-            "ignoreMissingFields" : true,
-            "fields" : [
+          "slice": {
+            "mode": "DROP",
+            "ignoreMissingFields": true,
+            "fields": [
               "NPI"
             ]
           }
         },
-        "parameters" : {
-          "fields" : [
+        "parameters": {
+          "fields": [
             {
-              "name" : "NPI",
-              "newProperties" : {
-                "label" : "NPI",
-                "name" : "NPI_to_dimension",
-                "typeProperties" : {
-                  "type" : "TEXT",
-                  "length" : 255
+              "name": "NPI",
+              "newProperties": {
+                "label": "NPI",
+                "name": "NPI_to_dimension",
+                "typeProperties": {
+                  "type": "TEXT",
+                  "length": 255
                 }
               }
             }
@@ -105,68 +105,68 @@
         }
       }
     },
-    "ui" : {
-      "nodes" : {
-        "TRANSFORM0" : {
-          "label" : "Create Name column",
-          "description" : "Combines first name and last name into a new column called Name.",
-          "type" : "TRANSFORM",
-          "top" : 112,
-          "left" : 392.4,
-          "graph" : {
-            "FORMULA0" : {
-              "parameters" : {
-                "type" : "BASE_FORMULA_UI"
+    "ui": {
+      "nodes": {
+        "TRANSFORM0": {
+          "label": "Create Name column",
+          "description": "Combines first name and last name into a new column called Name.",
+          "type": "TRANSFORM",
+          "top": 112,
+          "left": 392.4,
+          "graph": {
+            "FORMULA0": {
+              "parameters": {
+                "type": "BASE_FORMULA_UI"
               }
             }
           },
-          "connectors" : [ ]
+          "connectors": []
         },
-        "OUTPUT0" : {
-          "label" : "Output 0",
-          "type" : "OUTPUT",
-          "top" : 112,
-          "left" : 532.4
+        "OUTPUT0": {
+          "label": "Output 0",
+          "type": "OUTPUT",
+          "top": 112,
+          "left": 532.4
         },
-        "LOAD_DATASET0" : {
-          "label" : "ITT_Payermix",
-          "type" : "LOAD_DATASET",
-          "top" : 112,
-          "left" : 112,
-          "parameters" : {
-            "sampleSize" : 2000
+        "LOAD_DATASET0": {
+          "label": "ITT_Payermix",
+          "type": "LOAD_DATASET",
+          "top": 112,
+          "left": 112,
+          "parameters": {
+            "sampleSize": 2000
           }
         },
-        "TRANSFORM1" : {
-          "label" : "Transform Numeric to Dimension",
-          "type" : "TRANSFORM",
-          "top" : 112,
-          "left" : 252.39999999999998,
-          "graph" : {
-            "TO_DIMENSION0" : {
-              "label" : "To Text"
+        "TRANSFORM1": {
+          "label": "Transform Numeric to Dimension",
+          "type": "TRANSFORM",
+          "top": 112,
+          "left": 252.39999999999998,
+          "graph": {
+            "TO_DIMENSION0": {
+              "label": "To Text"
             }
           },
-          "connectors" : [ ]
+          "connectors": []
         }
       },
-      "connectors" : [
+      "connectors": [
         {
-          "source" : "TRANSFORM0",
-          "target" : "OUTPUT0"
+          "source": "TRANSFORM0",
+          "target": "OUTPUT0"
         },
         {
-          "source" : "TRANSFORM1",
-          "target" : "TRANSFORM0"
+          "source": "TRANSFORM1",
+          "target": "TRANSFORM0"
         },
         {
-          "source" : "LOAD_DATASET0",
-          "target" : "TRANSFORM1"
+          "source": "LOAD_DATASET0",
+          "target": "TRANSFORM1"
         }
       ],
-      "hiddenColumns" : [ ]
+      "hiddenColumns": []
     },
-    "runMode" : "full"
+    "runMode": "full"
   },
-  "lastTime" : null
+  "lastTime": null
 }
