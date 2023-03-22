@@ -62,7 +62,7 @@ Provide Medical Device sales reps with insights into physician procedure volumes
 
 -    Visual Studio Code
 -    An org with Health Cloud installed
-     -    Create a text field named NPI in both the Account and Contact objects
+     -    Create a text field named `NPI` in both the Account and Contact objects
 -    VS Extensions
      -    Salesforce CLI Integration
      -    Salesforce Extension Pack
@@ -73,18 +73,13 @@ Provide Medical Device sales reps with insights into physician procedure volumes
 -    Make sure Dev Hub is enabled in your org
 -    Authorize org in VS Code
      -    Cmd/Ctrl + Shift + P to open Command Palette
-     -    Run SFDX: Authorize an Org and follow prompts
--    Download Precision_Profile_Tool folder from [https://github.com/healthcare-and-life-sciences/precision-profiling-tool-template] and place the folder in your SFDX project in `/force-app/main/default/waveTemplates` (you will need to create the waveTemplates folder).
+     -    Run `SFDX: Authorize an Org` and follow prompts
+-    Download Precision_Profile_Tool folder from https://github.com/healthcare-and-life-sciences/precision-profiling-tool-template and place the folder in your SFDX project in `/force-app/main/default/waveTemplates` (you will need to create the waveTemplates folder).
 
 #### Install the Application Template
 
-1. Follow the download steps presented on the Accelerate HLS website for this Accelerator.
-
-     1. Alternatively, you may download the Data Pack folder in the following GitHub repository: **[https://github.com/healthcare-and-life-sciences/precision-profiling-tool-template]**
-
-2. Then, complete the following steps to import them into your Salesforce org.
-
-     1. .
+1. Find the required images in `/waveTemplates/Precision_Profile_Tool/images` and upload them each into Static Resources in your org. Make sure to name them exactly the same as the image file name excluding the file type extension. (Ex: “imagename” instead of “imagename.svg”)
+2. Deploy template by running `sfdx force:source:deploy -m waveTemplateBundle:Precision_Profile_Tool -u USERNAME` from the project root in VS Code, where USERNAME is the username you use to log in to your org.
 
 ---
 
