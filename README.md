@@ -30,11 +30,6 @@ Provide Medical Device sales reps with insights into physician procedure volumes
 
 -    Sales Representatives
 
-### User Workflow:
-
--    Add
--    Add
-
 ---
 
 ## Package Includes:
@@ -60,6 +55,7 @@ Provide Medical Device sales reps with insights into physician procedure volumes
 
 ### Pre-Install Configuration Steps:
 
+The following tools must be available and installed:
 -    Visual Studio Code
 -    An org with Health Cloud installed
      -    Create a text field named `NPI` in both the Account and Contact objects
@@ -69,6 +65,8 @@ Provide Medical Device sales reps with insights into physician procedure volumes
      -    Salesforce Extension Pack (Extended)
 -    [Install Salesforce CLI](https://developer.salesforce.com/docs/atlas.en-us.242.0.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm)
 -    Install CLI Analytics plugin by running `sfdx plugins:install @salesforce/analytics`
+
+Please complete the following steps to install the Accelerator:
 -    Create a Salesforce DX Project in VS Code
 -    Make sure Dev Hub is enabled in your org
 -    Authorize org in VS Code
@@ -85,9 +83,9 @@ Provide Medical Device sales reps with insights into physician procedure volumes
 
 ## Assumptions
 
-1. A customer has licenses for Health Cloud, Analytics Studio and the HINS Managed Package with OmniStudio. These solutions have all been installed and are functional.
+1. A customer has licenses for Health Cloud and Analytics Studio. These solutions have all been installed and are functional.
 2. A customer is assuming Salesforce Lightning Experience — not Classic.
-3. Data Model elements that are part of the HINS (Vlocity) Managed package and Health Cloud are all available.
+3. Data Model elements that are part of Health Cloud are all available.
 4. The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
 
 ---
@@ -96,3 +94,4 @@ Provide Medical Device sales reps with insights into physician procedure volumes
 
 -    **Revision Short Description (Month Day, Year)**
      -    Initial (March 22, 2023)
+     -    Updated documentation (April 3, 2023)
