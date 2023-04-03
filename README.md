@@ -1,10 +1,10 @@
-![](/Precision_Profile_Tool/images/preview_ppt_sun.png)
-
 # A-HLS Precision Profile Tool Documentation
 
 ## Overview
 
 This collection of dashboards, both embedded and stand-alone, provides Sales Reps, Marketing, Product Management, and Leadership with rich insights into facilities and physicians. Sales Reps get insights right in their account and contact pages that are accessible, in-context, and actionable. Others can use the data to understand total-addressable-markets, procedure volumes by sales regions, states, cities, facilities, and physicians. Referral networks can be followed up or down stream to open new opportunities. Combined with internal data this can be extended to understand marketshare and whitespace.
+
+![](/Precision_Profile_Tool/images/preview_ppt_sun.png)
 
 ---
 
