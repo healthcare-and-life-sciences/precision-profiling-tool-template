@@ -56,7 +56,7 @@
             "ignoreMissingFields": true,
             "fields": [
               "Account.NPI__c",
-              "Account.HealthCloudGA__SourceSystemId__c"
+              "Account.SourceSystemId__c"
             ]
           }
         },
@@ -67,7 +67,7 @@
           ],
           "rightQualifier": "Account",
           "rightKeys": [
-            "HealthCloudGA__SourceSystemId__c"
+            "SourceSystemId__c"
           ]
         }
       },
@@ -78,7 +78,7 @@
           "fields": [
             "Id",
             "NPI__c",
-            "HealthCloudGA__SourceSystemId__c"
+            "SourceSystemId__c"
           ],
           "dataset": {
             "type": "connectedDataset",
@@ -104,7 +104,7 @@
             "mode": "DROP",
             "ignoreMissingFields": true,
             "fields": [
-              "Contact.HealthCloudGA__SourceSystemId__c",
+              "Contact.SourceSystemId__c",
               "Contact.NPI__c"
             ]
           }
@@ -116,7 +116,7 @@
           ],
           "rightQualifier": "Contact",
           "rightKeys": [
-            "HealthCloudGA__SourceSystemId__c"
+            "SourceSystemId__c"
           ]
         }
       },
@@ -126,7 +126,7 @@
         "parameters": {
           "fields": [
             "Id",
-            "HealthCloudGA__SourceSystemId__c",
+            "SourceSystemId__c",
             "NPI__c"
           ],
           "dataset": {

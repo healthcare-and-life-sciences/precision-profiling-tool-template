@@ -56,9 +56,13 @@ Provide Medical Device sales reps with insights into physician procedure volumes
 ### Pre-Install Configuration Steps:
 
 The following tools must be available and installed:
+
 -    Visual Studio Code
 -    An org with Health Cloud installed
-     -    Create a text field named `NPI` in both the Account and Contact objects
+     -    Create a text field (255) named `NPI` in both the Account and Contact objects
+     -    Create a text field (255) named `SourceSystemId` in both the Account and Contact objects
+          -    Check "Do not allow duplicate values, Treat "ABC" and "abc" as duplicate values (case insensitive)
+          -    Check "Set this field as the unique record identifier from an external system"
 -    VS Extensions
      -    Salesforce CLI Integration
      -    Salesforce Extension Pack
@@ -67,6 +71,7 @@ The following tools must be available and installed:
 -    Install CLI Analytics plugin by running `sfdx plugins:install @salesforce/analytics`
 
 Please complete the following steps to install the Accelerator:
+
 -    Create a Salesforce DX Project in VS Code
 -    Make sure Dev Hub is enabled in your org
 -    Authorize org in VS Code
