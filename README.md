@@ -61,8 +61,8 @@ The following tools must be available and installed:
 -    An org with Health Cloud installed
      -    Create a text field (255) named `NPI` in both the Account and Contact objects
      -    Create a text field (255) named `SourceSystemId` in both the Account and Contact objects
-          -    Check "Do not allow duplicate values, Treat "ABC" and "abc" as duplicate values (case insensitive)
-          -    Check "Set this field as the unique record identifier from an external system"
+          -    Select "Do not allow duplicate values", "Treat 'ABC' and 'abc' as duplicate values (case insensitive)"
+          -    Select "Set this field as the unique record identifier from an external system"
 -    VS Extensions
      -    Salesforce CLI Integration
      -    Salesforce Extension Pack
