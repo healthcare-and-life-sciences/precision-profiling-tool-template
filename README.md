@@ -95,7 +95,7 @@ Please complete the following steps to install the Accelerator:
 
 ## Assumptions
 
-1. A customer has licenses for Health Cloud and Analytics Studio. These solutions have all been installed and are functional.
+1. A customer has licenses for Analytics Studio. These solutions have all been installed and are functional.
 2. A customer is assuming Salesforce Lightning Experience — not Classic.
 3. Data Model elements that are part of Health Cloud are all available.
 4. The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
