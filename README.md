@@ -91,6 +91,10 @@ Please complete the following steps to install the Accelerator:
 2. Deploy template by running `sfdx force:source:deploy -m waveTemplateBundle:Precision_Profile_Tool -u USERNAME` from the project root in VS Code, where USERNAME is the username you use to log in to your org.
      - NOTE: USERNAME should be the fully qualified name such as "example@myorg.com".
 
+#### Create an App in Analytics Studio
+
+1. For information on how to create an App in Analytics Studio using this template, see this help article: [https://help.salesforce.com/s/articleView?id=sf.bi_templates_create_app.htm&type=5](https://help.salesforce.com/s/articleView?id=sf.bi_templates_create_app.htm&type=5).
+
 ---
 
 ## Assumptions
