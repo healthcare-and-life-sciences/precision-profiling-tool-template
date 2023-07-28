@@ -86,9 +86,9 @@ Please complete the following steps to install the Accelerator:
 
 #### Install the Application Template
 
-1. Find the required images in `/waveTemplates/Precision_Profile_Tool/images` and upload them each into Static Resources in your org. Make sure to name them exactly the same as the image file name excluding the file type extension. (Ex: “imagename” instead of “imagename.svg”)
+1. Find the required images in `/waveTemplates/Precision_Profile_Tool/images` and upload them each by going to Setup in your org and searching for "Static Resources" in the Quick Find bar. Click on Static Resources in the left nav, and then click New to upload each image. Make sure to name them exactly the same as the image file name excluding the file type extension. (Ex: “imagename” instead of “imagename.svg”)
      - NOTE: Use the "images" folder insde the "Precision_Profile_Tool" directory, not the "images" folder in the root directory.
-2. Deploy template by running `sfdx force:source:deploy -m waveTemplateBundle:Precision_Profile_Tool -u USERNAME` from the project root in VS Code, where USERNAME is the username you use to log in to your org.
+2. Deploy template by running `sfdx force:source:deploy -m waveTemplateBundle:Precision_Profile_Tool -u USERNAME` from the project root in VS Code console/command line, where USERNAME is the username you use to log in to your org.
      - NOTE: USERNAME should be the fully qualified name such as "example@myorg.com".
 
 #### Create an App in Analytics Studio
